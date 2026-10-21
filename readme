@@ -380,3 +380,51 @@ strings.  Or not.
 
 I've tried to maintain backward compatibility, but the early days had so many
 variations of sensor output and rtl_433 output, so that is not really feasible.
+
+Independent continuation (0.99.0)
+
+This repository preserves matthewwall/weewx-sdr's original history and GPLv3
+license. It integrates parser changes proposed in PRs #203, #204, #206 and #209,
+with regression tests. Contributions by andylittle, zagamuffin, ChrisM510,
+WhatTheBelle and TheButterZone are retained and credited in NOTICE.
+
+The multi-module proposal in bjmc/weewx-sdr PR #211 is a recent experimental
+refactor. This release keeps the established single-module installation while
+adding parser and subprocess tests. A canonical stable successor has not been
+designated by upstream.
+
+    weectl extension install https://github.com/weewx-packages/weewx-sdr/archive/refs/tags/v0.99.0.zip
+
+Use the same Python interpreter/virtual environment that runs WeeWX. For a pip
+installation, invoke the driver with /path/to/weewx-venv/bin/python. Setting
+PYTHONPATH to a directory containing the weewx package's own files does not make
+that package importable; its parent must be on the import path.
+
+Model aliases preserve existing FOWH65BAltPacket mappings for Fineoffset-WS69.
+Bresser-3CH uses BresserTH, channel-prefixed IDs, and converts Fahrenheit to
+Celsius when needed. The Bresser-6in1 moisture field maps to soil_moisture_raw;
+Bresser-7in1 and WH46 provide pm2_5_atm and pm10_0_atm. WH46 also provides
+pm1_0_atm, pm4_0_atm and co2_atm. Use mapped names, not rtl_433 input keys.
+For example, outTemp = temperature.65.FOWH24BPacket and
+windSpeed = wind_speed.65.FOWH24BPacket.
+
+The path option is a search directory, for example /usr/bin. An absolute
+executable path in cmd also works. Quoted command arguments work without a shell.
+For a pipeline, set use_shell = true. Shutdown terminates the process group,
+waits for it, and joins the pipe readers before closing their file descriptors.
+
+Delta state lives in the driver's in-memory _counter_values dictionary. On a
+counter decrement, that interval is None and the new total becomes the baseline.
+The next increase produces a delta. Restarting the driver clears the baseline.
+To use StdWXCalculate instead, supply a dummy entry in [[deltas]], e.g.
+`dummy = dummy_total`, then configure the equivalent StdWXCalculate delta.
+
+A service's Unix identity, USB device permissions and rtl_433 configuration files
+can differ from an interactive shell. Reproduce the command as the configured
+service user and compare the actual config path and sensor_map. Changing global
+USB memory settings is not established as a fix for missing data in the tracker.
+
+Run `python -m pytest -q tests`. JSON fixtures and local subprocesses cover the
+reported parser, EOF, quoting, lifecycle and delta behavior. USB/RF loss and
+station-specific configuration require the affected system's device capture and
+service logs; these tests do not claim to fix an rtl_433 USB transfer failure.

@@ -1,0 +1,9 @@
+Independent continuation of https://github.com/matthewwall/weewx-sdr
+Upstream history and copyright notices are retained.
+Changes by weewx-packages are dated in modified source files.
+Parser and Python compatibility changes incorporate upstream proposals:
+PR #203: andylittle and zagamuffin, Bresser soil and air quality.
+PR #204: andylittle and ChrisM510, Fineoffset WH46 air quality.
+PR #206: WhatTheBelle, Acurite wind units.
+PR #209: TheButterZone, LaCrosse identifier and Python thread/regex APIs.
+Lifecycle repairs address the use cases in PRs #199, #104 and #211.
