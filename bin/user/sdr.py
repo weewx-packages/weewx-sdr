@@ -156,7 +156,7 @@ except ImportError:
         logmsg(syslog.LOG_ERR, msg)
 
 DRIVER_NAME = 'SDR'
-DRIVER_VERSION = '0.99.0'
+DRIVER_VERSION = '0.99.1'
 
 # The default command requests json output from every decoder
 # Use the -R option to indicate specific decoders
@@ -281,11 +281,13 @@ class ProcManager(object):
         process = self._process
         if process is None:
             return
-        if process.poll() is None:
-            try:
-                os.killpg(process.pid, signal.SIGKILL)
-            except ProcessLookupError:
-                pass
+        # A shell may exit while its children still hold the output pipes.
+        # Kill the process group even after the shell has exited, so the readers
+        # reach EOF before we join them and close their pipes.
+        try:
+            os.killpg(process.pid, signal.SIGKILL)
+        except ProcessLookupError:
+            pass
         process.wait(timeout=5)
         for reader in (self.stdout_reader, self.stderr_reader):
             if reader is not None:

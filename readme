@@ -381,7 +381,7 @@ strings.  Or not.
 I've tried to maintain backward compatibility, but the early days had so many
 variations of sensor output and rtl_433 output, so that is not really feasible.
 
-Independent continuation (0.99.0)
+Independent continuation (0.99.1)
 
 This repository preserves matthewwall/weewx-sdr's original history and GPLv3
 license. It integrates parser changes proposed in PRs #203, #204, #206 and #209,
@@ -393,7 +393,7 @@ refactor. This release keeps the established single-module installation while
 adding parser and subprocess tests. A canonical stable successor has not been
 designated by upstream.
 
-    weectl extension install https://github.com/weewx-packages/weewx-sdr/archive/refs/tags/v0.99.0.zip
+    weectl extension install https://github.com/weewx-packages/weewx-sdr/archive/refs/tags/v0.99.1.zip
 
 Use the same Python interpreter/virtual environment that runs WeeWX. For a pip
 installation, invoke the driver with /path/to/weewx-venv/bin/python. Setting

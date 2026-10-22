@@ -3,11 +3,14 @@
 import importlib.util
 import io
 import json
+import os
 from pathlib import Path
 import queue
 import shlex
+import signal
 import subprocess
 import sys
+import threading
 from unittest.mock import Mock
 import warnings
 
@@ -156,3 +159,35 @@ def test_regex_compiles_without_warnings():
     with warnings.catch_warnings():
         warnings.simplefilter('error', SyntaxWarning)
         compile(path.read_text(), str(path), 'exec')
+
+
+def test_shutdown_kills_children_after_shell_exit():
+    manager = m.ProcManager()
+    manager.startup('sleep 60 &', use_shell=True)
+    process_group = manager._process.pid
+    manager._process.wait(timeout=2)
+    readers = [manager.stdout_reader, manager.stderr_reader]
+    errors = []
+
+    def shutdown():
+        try:
+            manager.shutdown()
+        except Exception as error:
+            errors.append(error)
+
+    worker = threading.Thread(target=shutdown, daemon=True)
+    worker.start()
+    try:
+        worker.join(3)
+        completed = not worker.is_alive()
+    finally:
+        # The child owns the pipes after the shell exits. Kill it even when
+        # shutdown fails, so the regression test cannot leave a sleeper behind.
+        try:
+            os.killpg(process_group, signal.SIGKILL)
+        except ProcessLookupError:
+            pass
+        worker.join(5)
+    assert completed, 'shutdown blocked on pipes held by the exited shell child'
+    assert not errors
+    assert all(not reader.is_alive() for reader in readers)
