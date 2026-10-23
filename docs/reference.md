@@ -2,8 +2,9 @@
 
 Copyright 2016-2024 Matthew Wall. GPLv3. These are the original detailed mapping,
 logging and receiver notes. Use the [README](../README.md) for current installation.
-Run standalone examples with the WeeWX Python interpreter and the station's
-`bin` on `PYTHONPATH`, or give Python the installed `sdr.py` path. Stop WeeWX
+Before running standalone examples, activate the Python environment used by
+WeeWX. Replace `/path/to/station/bin` with the installed station's `bin`
+directory and `/path/to/weewx.conf` with its configuration file. Stop WeeWX
 before a diagnostic that opens the same dongle. The `libusb` observations below
 are historical reports, not a current compatibility guarantee.
 
@@ -21,7 +22,7 @@ map, then use the default invocation so that you can see all of the sensors
 that rtl_433 recognizes.  From this output you will choose the sensors and
 their identifiers to create your sensor_map.
 
-  python3 sdr.py
+  PYTHONPATH=/path/to/station/bin python -m user.sdr
 
 Here are some sensor_map examples:
 
@@ -152,7 +153,7 @@ First, shut down weewx so that you can talk to the SDR directly.
 Then run the SDR driver directly, but tell it to print out information only
 about sensors that you have not yet added to your weewx configuration:
 
-  python3 sdr.py --config weewx.conf --hide=out,parsed,mapped
+  PYTHONPATH=/path/to/station/bin python -m user.sdr --config /path/to/weewx.conf --hide=out,parsed,mapped
 
 As always, unless the sensor identifier is marked on the sensor itself, you
 should turn on sensors one at a time, marking the outside of the sensor with
@@ -183,7 +184,7 @@ sudo rtl_433 -M utc -F json -R 9 -R 31
 Once that is working, run the driver directly to be sure that it is collecting
 data from the rtl_433 application.
 
-python3 sdr.py --cmd="rtl_433 -M utc -F json"
+PYTHONPATH=/path/to/station/bin python -m user.sdr --cmd="rtl_433 -M utc -F json"
 
 Make note of the sensor identifiers.  Each identifier is a three-part string
 consisting of the observation, sensor id, and rf packet type, separated by
@@ -195,8 +196,7 @@ the sensor map.  Then run weewx directly in one shell while you monitor the
 weewx log in a separate shell:
 
 in shell 1:
-cd /home/weewx
-sudo ./bin/weewxd weewx.conf
+weewxd /path/to/weewx.conf
 
 in shell 2:
 tail -f /var/log/syslog
@@ -263,7 +263,7 @@ Support for new sensor types
 To add support for new sensors, capture the output from rtl_433.  To capture
 output, run the driver directly and hide known packets:
 
-  python3 sdr.py --cmd="rtl_433 -M utc -F json" --hide parsed,out,empty
+  PYTHONPATH=/path/to/station/bin python -m user.sdr --cmd="rtl_433 -M utc -F json" --hide parsed,out,empty
 
 This should emit a line for each unparsed type.  For example:
 

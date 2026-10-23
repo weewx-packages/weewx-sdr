@@ -13,6 +13,9 @@ WhatTheBelle and TheButterZone and proposals from PRs #203, #204, #206 and #209.
 
 ## Install
 
+An existing WeeWX station is required. Replace `/path/to/weewx.conf`
+with its configuration file before running the commands.
+
 The catalog release requires Python >=3.10 and WeeWX >=5.2,<6.
 
 Install [rtl_433](https://github.com/merbanan/rtl_433) and the appropriate
@@ -27,9 +30,9 @@ weectl extension install https://github.com/weewx-packages/weewx-sdr/releases/do
 weectl station reconfigure --driver=user.sdr --config=/path/to/weewx.conf
 ```
 
-Replace `/path/to/weewx.conf` with your station configuration. Stock WeeWX 5
-accepts this fixed URL or a downloaded copy of the same archive. No catalog
-integration is required. Restart WeeWX yourself after configuration changes.
+Stock WeeWX 5 accepts this fixed URL or a downloaded copy of the same archive.
+No catalog integration is required. Restart WeeWX yourself after configuration
+changes.
 
 ## Identify and map sensors
 
