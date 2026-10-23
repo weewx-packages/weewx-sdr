@@ -1,7 +1,8 @@
 # SDR configuration and diagnostics
 
 Copyright 2016-2024 Matthew Wall. GPLv3. These are the original detailed mapping,
-logging and receiver notes. Use the [README](../README.md) for current installation.
+logging and receiver notes. Installation and the option defaults are in the
+[README](../README.md).
 Before running standalone examples, activate the Python environment used by
 WeeWX. Replace `/path/to/station/bin` with the installed station's `bin`
 directory and `/path/to/weewx.conf` with its configuration file. Stop WeeWX
@@ -96,15 +97,9 @@ Configuration - logging
 If you turn on debug=1, you will see a bewildering output from the SDR driver.
 Although this is really helpful when debugging and diagnosing problems, often
 you want far less information.  There are a few logging options to help you
-control this beast.
-
-[SDR]
-    driver = user.sdr
-    log_lines = (True | False)
-    log_unknown_sensors = (True | False)
-    log_unmapped_sensors = (True | False)
-    log_packets = (True | False)             # only applies with debug=1
-    log_duplicate_readings = (True | False)  # only applies with debug=1
+control this beast. The [README](../README.md#configuration) lists them with
+their defaults: log_lines, log_unknown_sensors, log_unmapped_sensors, and, with
+debug=1 only, log_packets and log_duplicate_readings.
 
 
 ===============================================================================
@@ -171,8 +166,7 @@ sudo rtl_433
 
 Be sure that you are capturing data from the sensors you care about.  To do
 this, you might want to experiment with some of the options to rtl_433.  For
-example, this will eliminate extraneous output (-q), and use UTC for timestamps
-(-M utc):
+example, this will emit JSON (-F json) and use UTC for timestamps (-M utc):
 
 sudo rtl_433 -M utc -F json
 
@@ -298,5 +292,3 @@ strings.  Or not.
 
 I've tried to maintain backward compatibility, but the early days had so many
 variations of sensor output and rtl_433 output, so that is not really feasible.
-
-<!-- Documentation updated 2026-10-23 by weewx-packages. -->
