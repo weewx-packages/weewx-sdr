@@ -2,6 +2,8 @@ Unreleased
 * fixed show-detected action on Python 3
 * convert timestamp_match_threshhold to a number and use it to ignore packets
   that repeat the previous one apart from a timestamp within the threshhold
+* show-detected skips packets that carry no observation instead of raising
+  IndexError
 * read the Bresser-6in1 UV index from the rtl_433 field uvi into uv_index
 
 0.96b1

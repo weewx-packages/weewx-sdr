@@ -2,6 +2,8 @@
 # Modified 2026-10-22 by weewx-packages.
 # Modified 2026-10-23 by weewx-packages: fix show-detected on Python 3, apply
 # timestamp_match_threshhold, read the Bresser-6in1 UV index from 'uvi'.
+# Modified 2026-10-23 by weewx-packages: show-detected skips packets that carry
+# no observation instead of raising IndexError.
 # Copyright 2016-2024 Matthew Wall
 # Distributed under the terms of the GNU Public License (GPLv3)
 """
@@ -3949,10 +3951,15 @@ Hide:
                     del p['usUnits']
                     del p['dateTime']
                     keys = list(p.keys())
-                    label = re.sub(r'^[^\.]+', '', keys[0])
-                    if label not in detected:
-                        detected[label] = 0
-                    detected[label] += 1
+                    # The label is the '.<id>.<packet type>' suffix of an
+                    # observation name. A packet with no observation left,
+                    # such as a LaCrosse WS message without any reading,
+                    # has no label and is not counted.
+                    if keys:
+                        label = re.sub(r'^[^\.]+', '', keys[0])
+                        if label not in detected:
+                            detected[label] = 0
+                        detected[label] += 1
                 print(detected)
     else:
         # display output and parsed/unparsed packets
