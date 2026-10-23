@@ -67,6 +67,7 @@ Options in `[SDR]`:
 | `log_unmapped_sensors` | `False` | Log parsed packets that the sensor map does not select. |
 | `log_packets` | `True` | Log each mapped packet. Only with `debug = 1`. |
 | `log_duplicate_readings` | `True` | Log ignored duplicate packets. Only with `debug = 1`. |
+| `timestamp_match_threshhold` | `1` | Seconds within which a mapped packet that repeats the previous one apart from its timestamp counts as a duplicate and is ignored. |
 
 The `[[sensor_map]]` subsection maps a WeeWX field on the left to an identifier
 `<observation>.<sensor_id>.<packet_type>` on the right. Each part accepts glob
@@ -112,6 +113,8 @@ maps, the `--hide` filter for new sensors and the steps for adding a parser.
 - Bresser-3CH packets use `BresserTH` and channel-prefixed IDs such as `1:55`.
   Fahrenheit readings are converted to Celsius.
 - The Bresser-6in1 moisture field maps to `soil_moisture_raw`.
+- The Bresser-6in1 UV index maps to `uv_index`. `rtl_433` releases before
+  25.12 name it `uv`, which maps to `uv`.
 - Bresser-7in1 provides `pm2_5_atm` and `pm10_0_atm`. Fineoffset-WH46 provides
   `pm1_0_atm`, `pm2_5_atm`, `pm4_0_atm`, `pm10_0_atm` and `co2_atm`.
 

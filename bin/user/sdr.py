@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 # Modified 2026-10-22 by weewx-packages.
+# Modified 2026-10-23 by weewx-packages: fix show-detected on Python 3, apply
+# timestamp_match_threshhold, read the Bresser-6in1 UV index from 'uvi'.
 # Copyright 2016-2024 Matthew Wall
 # Distributed under the terms of the GNU Public License (GPLv3)
 """
@@ -1393,7 +1395,7 @@ class Bresser6in1Packet(Packet):
             pkt['wind_speed'] = Packet.get_float(obj, 'wind_avg_m_s')
         if 'uv' in obj:
             pkt['uv'] = Packet.get_float(obj, 'uv')
-        if 'uv_index' in obj:
+        if 'uvi' in obj:
             pkt['uv_index'] = Packet.get_float(obj, 'uvi')
         if 'moisture' in obj:
             pkt['soil_moisture_raw'] = Packet.get_float(obj, 'moisture')
@@ -3747,7 +3749,7 @@ class SDRDriver(weewx.drivers.AbstractDevice):
         loginf('sensor map is %s' % self._sensor_map)
         self._deltas = stn_dict.get('deltas', SDRDriver.DEFAULT_DELTAS)
         loginf('deltas is %s' % self._deltas)
-        self._ts_delta = stn_dict.get('timestamp_match_threshhold', SDRDriver.TIMESTAMP_MATCH_THRESHHOLD)
+        self._ts_delta = float(stn_dict.get('timestamp_match_threshhold', SDRDriver.TIMESTAMP_MATCH_THRESHHOLD))
         self._counter_values = dict()
         cmd = stn_dict.get('cmd', DEFAULT_CMD)
         path = stn_dict.get('path', None)
@@ -3799,7 +3801,7 @@ class SDRDriver(weewx.drivers.AbstractDevice):
         # of packets.  if the data match, but the timestamps are different,
         # then that is considered different, but only if the timestamp is
         # bigger than the sampling period for the hardware.
-        if pkt1 != pkt2:
+        if pkt1 is None or pkt2 is None:
             return False
         a = copy.deepcopy(pkt1)
         b = copy.deepcopy(pkt2)
@@ -3946,7 +3948,7 @@ Hide:
                 if p:
                     del p['usUnits']
                     del p['dateTime']
-                    keys = p.keys()
+                    keys = list(p.keys())
                     label = re.sub(r'^[^\.]+', '', keys[0])
                     if label not in detected:
                         detected[label] = 0

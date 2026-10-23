@@ -191,3 +191,39 @@ def test_shutdown_kills_children_after_shell_exit():
     assert completed, 'shutdown blocked on pipes held by the exited shell child'
     assert not errors
     assert all(not reader.is_alive() for reader in readers)
+
+
+def test_bresser_6in1_uv_index():
+    packet = parse('Bresser-6in1', uvi=3.2)
+    assert value(packet, 'uv_index') == 3.2
+
+
+def test_show_detected_counts_packets(monkeypatch, capsys):
+    line = json.dumps({'time': '2026-02-04 13:09:57', 'model': 'Bresser-6in1',
+                       'id': 55, 'temperature_C': 6.4})
+    cmd = shlex.join([sys.executable, '-c', 'print(%r)' % line])
+    monkeypatch.setattr(sys, 'argv', ['sdr', '--action=show-detected', '--cmd=' + cmd])
+    m.main()
+    assert "{'.55.Bresser6in1Packet': 1}" in capsys.readouterr().out
+
+
+def threshold_driver(threshold):
+    driver = m.SDRDriver(timestamp_match_threshhold=threshold,
+                         cmd=shlex.join([sys.executable, '-c', 'pass']))
+    driver.closePort()
+    return driver
+
+
+def test_timestamp_threshold_from_config_string():
+    driver = threshold_driver('5')
+    packet = {'dateTime': 100, 'usUnits': 1, 'outTemp': 20.0}
+    assert driver._packets_match(packet, dict(packet))
+
+
+def test_timestamp_threshold_rejects_near_duplicates():
+    driver = threshold_driver('5')
+    packet = {'dateTime': 100, 'usUnits': 1, 'outTemp': 20.0}
+    assert not driver._packets_match(packet, None)
+    assert driver._packets_match(packet, dict(packet, dateTime=103))
+    assert not driver._packets_match(packet, dict(packet, dateTime=106))
+    assert not driver._packets_match(packet, dict(packet, outTemp=20.1))
