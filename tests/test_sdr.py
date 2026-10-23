@@ -207,6 +207,16 @@ def test_show_detected_counts_packets(monkeypatch, capsys):
     assert "{'.55.Bresser6in1Packet': 1}" in capsys.readouterr().out
 
 
+def test_show_detected_skips_packet_without_observations(monkeypatch, capsys):
+    lines = [json.dumps({'time': '2026-02-04 13:09:57', 'model': 'LaCrosse WS', 'id': 1}),
+             json.dumps({'time': '2026-02-04 13:09:58', 'model': 'Bresser-6in1',
+                         'id': 55, 'temperature_C': 6.4})]
+    cmd = shlex.join([sys.executable, '-c', 'print(%r)' % '\n'.join(lines)])
+    monkeypatch.setattr(sys, 'argv', ['sdr', '--action=show-detected', '--cmd=' + cmd])
+    m.main()
+    assert "{'.55.Bresser6in1Packet': 1}" in capsys.readouterr().out
+
+
 def threshold_driver(threshold):
     driver = m.SDRDriver(timestamp_match_threshhold=threshold,
                          cmd=shlex.join([sys.executable, '-c', 'pass']))
