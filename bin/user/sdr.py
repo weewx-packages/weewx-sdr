@@ -160,7 +160,7 @@ except ImportError:
         logmsg(syslog.LOG_ERR, msg)
 
 DRIVER_NAME = 'SDR'
-DRIVER_VERSION = '0.99.1'
+DRIVER_VERSION = '0.99.2'
 
 # The default command requests json output from every decoder
 # Use the -R option to indicate specific decoders

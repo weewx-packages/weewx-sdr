@@ -1,4 +1,4 @@
-Unreleased
+0.99.2 23oct2026
 * fixed show-detected action on Python 3
 * convert timestamp_match_threshhold to a number and use it to ignore packets
   that repeat the previous one apart from a timestamp within the threshhold
