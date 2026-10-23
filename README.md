@@ -1,59 +1,49 @@
-# SDR weather sensors for WeeWX
+# SDR
 
-Run `rtl_433` and map its decoded radio observations into WeeWX LOOP packets.
-This driver requires a separately installed `rtl_433` executable, its radio
-backend and a compatible SDR receiver. A sensor needs both an `rtl_433` decoder
-and a matching parser here; support in `rtl_433` alone is insufficient.
+This driver runs `rtl_433` and maps its decoded radio observations into WeeWX
+LOOP packets. It does not install `rtl_433`, radio libraries or USB rules. A
+sensor needs both an `rtl_433` decoder and a matching parser in this driver;
+support in `rtl_433` alone is not enough.
 
-Release 0.99.1 independently continues
-[matthewwall/weewx-sdr](https://github.com/matthewwall/weewx-sdr). It retains the
-single-module driver and incorporates parser and subprocess repairs. See
-[NOTICE](NOTICE) for contributions by andylittle, zagamuffin, ChrisM510,
-WhatTheBelle and TheButterZone and proposals from PRs #203, #204, #206 and #209.
+This is an independent continuation of
+[matthewwall/weewx-sdr](https://github.com/matthewwall/weewx-sdr). [NOTICE](NOTICE)
+lists the incorporated parser and subprocess repairs and their contributors.
 
-## Install
+## Requirements
 
-An existing WeeWX station is required. Replace `/path/to/weewx.conf`
-with its configuration file before running the commands.
+- An SDR receiver supported by `rtl_433`.
+- [rtl_433](https://github.com/merbanan/rtl_433) and the matching
+  [RTL-SDR backend](https://osmocom.org/projects/rtl-sdr/wiki) for the receiver.
+- The user running WeeWX needs access to the USB device, the `rtl_433`
+  executable on its `PATH` and the shared libraries it links against.
 
-The catalog release requires Python >=3.10 and WeeWX >=5.2,<6.
+No Python packages are needed beyond WeeWX.
 
-Install [rtl_433](https://github.com/merbanan/rtl_433) and the appropriate
-[RTL-SDR backend](https://osmocom.org/projects/rtl-sdr/wiki) for your receiver.
-The extension installs only `bin/user/sdr.py`; it does not install radio tools,
-USB rules or native libraries. No extra Python dependency is needed beyond WeeWX.
+## Installation
 
-Use the `weectl` from your WeeWX Python environment:
+Install `sdr` from the [WeeWX packages catalog](https://github.com/weewx-packages/catalog/blob/main/packages/sdr.md).
+The catalog page lists the current release, its WeeWX and Python
+requirements, and the install, update and removal commands.
+
+Then select the driver. Add a sensor map, described below, before you restart
+WeeWX.
 
 ```sh
-weectl extension install https://github.com/weewx-packages/weewx-sdr/releases/download/v0.99.1/weewx-sdr-0.99.1.zip --config=/path/to/weewx.conf
 weectl station reconfigure --driver=user.sdr --config=/path/to/weewx.conf
 ```
 
-Stock WeeWX 5 accepts this fixed URL or a downloaded copy of the same archive.
-No catalog integration is required. Restart WeeWX yourself after configuration
-changes.
+## Configuration
 
-## Identify and map sensors
-
-Stop WeeWX before opening its dongle in a standalone process. Use the WeeWX
-Python environment and replace the station path:
-
-```sh
-PYTHONPATH=/path/to/station/bin python -m user.sdr --action=list-supported
-PYTHONPATH=/path/to/station/bin python -m user.sdr --cmd='rtl_433 -M utc -F json'
-```
-
-The first command lists implemented parsers without opening a receiver. The
-second displays received packets until interrupted. Copy the decoded identifiers
-into `weewx.conf`. For a Fine Offset sensor decoded as `FOWH24BPacket` with ID 65:
+The driver collects nothing until the `[[sensor_map]]` maps at least one
+sensor. A minimal configuration for a Fine Offset WH24 sensor decoded as
+`FOWH24BPacket` with ID 65:
 
 ```ini
 [Station]
     station_type = SDR
+
 [SDR]
     driver = user.sdr
-    cmd = rtl_433 -M utc -F json
     [[sensor_map]]
         outTemp = temperature.65.FOWH24BPacket
         outHumidity = humidity.65.FOWH24BPacket
@@ -62,46 +52,92 @@ into `weewx.conf`. For a Fine Offset sensor decoded as `FOWH24BPacket` with ID 6
         rain_total = rain_total.65.FOWH24BPacket
 ```
 
-Use your actual packet type, fields and ID. An empty map produces no weather
-observations. The default `[[deltas]]` turns `rain_total` into `rain` and
-`strikes_total` into `lightning_strike_count`. Restart WeeWX after configuration.
-The service user needs USB access, the receiver executable on `PATH`, and its
-shared libraries. An absolute executable path in `cmd` avoids PATH differences.
+Options in `[SDR]`:
 
-## Parser changes and limits
+| Option | Default | Meaning |
+|---|---|---|
+| `driver` | | Must be `user.sdr`. |
+| `cmd` | `rtl_433 -M utc -F json` | Command that starts `rtl_433`. Quoted arguments work without a shell. |
+| `use_shell` | `False` | Run `cmd` through a shell. Needed for a pipeline. |
+| `path` | none | Directory prepended to `PATH`, for example `/opt/rtl-433/bin`. An absolute executable path in `cmd` also works. |
+| `ld_library_path` | none | Value for `LD_LIBRARY_PATH` of the `rtl_433` process. |
+| `model` | `SDR` | Hardware name reported to WeeWX. |
+| `log_lines` | `False` | Log every line read from `rtl_433`. |
+| `log_unknown_sensors` | `False` | Log lines that no parser recognizes. |
+| `log_unmapped_sensors` | `False` | Log parsed packets that the sensor map does not select. |
+| `log_packets` | `True` | Log each mapped packet. Only with `debug = 1`. |
+| `log_duplicate_readings` | `True` | Log ignored duplicate packets. Only with `debug = 1`. |
 
-Model aliases preserve existing FOWH65BAltPacket mappings for Fineoffset-WS69.
-Bresser-3CH uses BresserTH, channel-prefixed IDs, and converts Fahrenheit to
-Celsius when needed. The Bresser-6in1 moisture field maps to soil_moisture_raw;
-Bresser-7in1 and WH46 provide pm2_5_atm and pm10_0_atm. WH46 also provides
-pm1_0_atm, pm4_0_atm and co2_atm. Use mapped names, not rtl_433 input keys.
-For example, outTemp = temperature.65.FOWH24BPacket and
-windSpeed = wind_speed.65.FOWH24BPacket.
+The `[[sensor_map]]` subsection maps a WeeWX field on the left to an identifier
+`<observation>.<sensor_id>.<packet_type>` on the right. Each part accepts glob
+patterns such as `*`. Use the mapped names the driver prints, not the
+`rtl_433` JSON keys.
 
-The path option is a search directory, for example /usr/bin. An absolute
-executable path in cmd also works. Quoted command arguments work without a shell.
-For a pipeline, set use_shell = true. Shutdown terminates the process group,
-waits for it, and joins the pipe readers before closing their file descriptors.
+The `[[deltas]]` subsection turns cumulative totals into per-interval amounts.
+Without it, the driver uses:
 
-Delta state lives in the driver's in-memory _counter_values dictionary. On a
-counter decrement, that interval is None and the new total becomes the baseline.
-The next increase produces a delta. Restarting the driver clears the baseline.
-To use StdWXCalculate instead, supply a dummy entry in [[deltas]], e.g.
-`dummy = dummy_total`, then configure the equivalent StdWXCalculate delta.
+```ini
+    [[deltas]]
+        rain = rain_total
+        lightning_strike_count = strikes_total
+```
 
-A service's Unix identity, USB device permissions and rtl_433 configuration files
-can differ from an interactive shell. Reproduce the command as the configured
-service user and compare the actual config path and sensor_map. Changing global
-USB memory settings is not established as a fix for missing data in the tracker.
+A `[[deltas]]` subsection replaces these defaults completely. The previous
+total is kept in memory only. After a restart, or when a total decreases, that
+interval has no value and the new total becomes the baseline. To let
+StdWXCalculate compute the delta instead, put a dummy entry such as
+`dummy = dummy_total` in `[[deltas]]`.
 
+### Identify sensors
 
-Hardware/RF behavior, USB loss and model-specific output require a device capture
-and service logs. Offline fixtures do not establish reception. Only JSON output
-is maintained; older text parsers remain for historical formats. The experimental
-multi-module refactor in bjmc/weewx-sdr PR #211 is separate from this release.
+Stop WeeWX before running the driver directly, because both open the same
+receiver. Use the Python environment of WeeWX and the station's `bin`
+directory:
 
-See the [configuration and diagnostic reference](docs/reference.md) for more
-sensor maps, logging, environment settings and adding a parser. Copyright
-2016-2024 Matthew Wall. Distributed under [GPLv3](license).
+```sh
+PYTHONPATH=/path/to/station/bin python -m user.sdr --action=list-supported
+PYTHONPATH=/path/to/station/bin python -m user.sdr --cmd='rtl_433 -M utc -F json'
+```
 
-<!-- Documentation updated 2026-10-23 by weewx-packages. -->
+The first command lists the implemented parsers without opening a receiver.
+The second prints received and parsed packets until interrupted. Copy the
+identifiers into `[[sensor_map]]`. The
+[configuration and diagnostic reference](docs/reference.md) has more sensor
+maps, the `--hide` filter for new sensors and the steps for adding a parser.
+
+### Sensor-specific notes
+
+- Fineoffset-WS69 packets are parsed as `FOWH65BAltPacket`, so existing
+  `FOWH65BAltPacket` mappings keep working.
+- Bresser-3CH packets use `BresserTH` and channel-prefixed IDs such as `1:55`.
+  Fahrenheit readings are converted to Celsius.
+- The Bresser-6in1 moisture field maps to `soil_moisture_raw`.
+- Bresser-7in1 provides `pm2_5_atm` and `pm10_0_atm`. Fineoffset-WH46 provides
+  `pm1_0_atm`, `pm2_5_atm`, `pm4_0_atm`, `pm10_0_atm` and `co2_atm`.
+
+### Running as a service
+
+The user, USB permissions and `rtl_433` configuration files of a service can
+differ from an interactive shell. Reproduce the command as the service user and
+compare the configuration path and the sensor map. On shutdown the driver stops
+the whole process group, including the members of a shell pipeline.
+
+## Limitations
+
+- The tests use recorded packets only. Reception, USB disconnects and
+  model-specific output are not covered. Diagnosing them needs a capture from
+  the device and the service logs.
+- Only JSON output from `rtl_433` is maintained. The plain-text parsers remain
+  for historical output formats.
+- Changing global USB memory settings has not been shown to fix missing data.
+
+## Development
+
+```sh
+python -m pytest -q tests
+```
+
+## License
+
+Copyright 2016-2024 Matthew Wall. Distributed under the terms of the GNU
+General Public License v3, see [license](license).
