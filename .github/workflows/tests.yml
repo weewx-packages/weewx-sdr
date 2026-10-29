@@ -10,4 +10,4 @@ permissions:
 
 jobs:
   tests:
-    uses: weewx-packages/catalog/.github/workflows/package-tests.yml@ci/package-tests
+    uses: weewx-packages/catalog/.github/workflows/package-tests.yml@main
