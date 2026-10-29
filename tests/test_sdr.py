@@ -1,6 +1,7 @@
 # Copyright 2026 weewx-packages
+# Copyright (c) 2026 Manuel Hilgert <hilman2@gmail.com>
 # Distributed under the terms of the GNU Public License (GPLv3)
-import importlib.util
+import ast
 import io
 import json
 import os
@@ -16,11 +17,13 @@ import warnings
 
 import pytest
 
-path = Path(__file__).parents[1] / 'bin/user/sdr.py'
-spec = importlib.util.spec_from_file_location('sdr', path)
-m = importlib.util.module_from_spec(spec)
-sys.modules[spec.name] = m
-spec.loader.exec_module(m)
+ROOT = Path(__file__).parents[1]
+sys.path.insert(0, str(ROOT / 'bin'))
+
+import user.sdr as m  # noqa: E402
+import user.sdr_packets  # noqa: E402
+
+SOURCES = sorted((ROOT / 'bin/user').rglob('*.py'))
 
 
 def parse(model, **fields):
@@ -155,10 +158,23 @@ def test_shell_pipeline_output_and_shutdown():
         manager.shutdown()
 
 
-def test_regex_compiles_without_warnings():
+@pytest.mark.parametrize('path', SOURCES, ids=lambda path: path.name)
+def test_regex_compiles_without_warnings(path):
     with warnings.catch_warnings():
         warnings.simplefilter('error', SyntaxWarning)
         compile(path.read_text(), str(path), 'exec')
+
+
+def test_installer_lists_every_module():
+    tree = ast.parse((ROOT / 'install.py').read_text())
+    files = next(ast.literal_eval(node.value) for node in tree.body
+                 if isinstance(node, ast.Assign) and node.targets[0].id == 'FILES')
+    assert sorted(files) == sorted(str(path.relative_to(ROOT)) for path in SOURCES)
+
+
+def test_factory_searches_every_parser_module():
+    modules = {path.stem for path in (ROOT / 'bin/user/sdr_packets').glob('*.py')}
+    assert set(user.sdr_packets.PARSER_MODULES) == modules - {'__init__', 'base'}
 
 
 def test_shutdown_kills_children_after_shell_exit():
@@ -237,3 +253,14 @@ def test_timestamp_threshold_rejects_near_duplicates():
     assert driver._packets_match(packet, dict(packet, dateTime=103))
     assert not driver._packets_match(packet, dict(packet, dateTime=106))
     assert not driver._packets_match(packet, dict(packet, outTemp=20.1))
+
+
+# Example rtl_433 output from the comments in the parsers, with the packets that
+# the single-module driver 0.99.2 made of it. A change to a parser that alters
+# its packets has to update the entry here.
+EXAMPLES = json.loads((ROOT / 'tests/examples.json').read_text())
+
+
+@pytest.mark.parametrize('example', EXAMPLES)
+def test_example_packets(example):
+    assert list(m.PacketFactory.create(list(example['lines']))) == example['packets']
