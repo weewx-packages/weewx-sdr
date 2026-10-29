@@ -5,6 +5,8 @@ Unreleased
 * tests/examples.json checks the packets made from the example output in the
   parser comments.  Thanks to bjmc, whose matthewwall/weewx-sdr#211 proposed
   splitting sdr.py and testing the examples.
+* plain-text output of a model whose parser has no text format no longer makes
+  the driver loop forever on the same lines
 
 0.99.2 23oct2026
 * fixed show-detected action on Python 3

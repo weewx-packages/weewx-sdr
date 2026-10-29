@@ -264,3 +264,16 @@ EXAMPLES = json.loads((ROOT / 'tests/examples.json').read_text())
 @pytest.mark.parametrize('example', EXAMPLES)
 def test_example_packets(example):
     assert list(m.PacketFactory.create(list(example['lines']))) == example['packets']
+
+
+def test_text_output_of_parser_without_text_format_ends():
+    # FOWH65BPacket has no parse_text, like most parsers.
+    lines = ['2018-10-10 13:37:02 :   Fine Offset WH65B\n', ' id : 89\n',
+             ' temperature_C : 17.600\n']
+    packets = []
+    worker = threading.Thread(
+        target=lambda: packets.extend(m.PacketFactory.create(lines)), daemon=True)
+    worker.start()
+    worker.join(2)
+    assert not worker.is_alive(), 'PacketFactory.create keeps looping over the lines'
+    assert packets == []
