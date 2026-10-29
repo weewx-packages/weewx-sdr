@@ -1,0 +1,2620 @@
+[
+ {
+  "lines": [
+   "{\"time\": \"2019-12-14 16:56:57\", \"model\": \"Acurite-Atlas\", \"id\": 896, \"channel\": \"A\", \"sequence_num\": 0, \"battery_ok\": 1, \"message_type\": 37, \"wind_avg_mi_h\": 5.000, \"temperature_F\": 40.000, \"humidity\": 76, \"byte8\": 0, \"byte9\": 37, \"byte89\": 37}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1576342617,
+    "usUnits": 1,
+    "model.0380.AcuriteAtlasPacket": "Acurite-Atlas",
+    "channel.0380.AcuriteAtlasPacket": "A",
+    "sequence_num.0380.AcuriteAtlasPacket": 0,
+    "message_type.0380.AcuriteAtlasPacket": 37,
+    "humidity.0380.AcuriteAtlasPacket": 76.0,
+    "temperature.0380.AcuriteAtlasPacket": 40.0,
+    "wind_speed.0380.AcuriteAtlasPacket": 5.0,
+    "battery.0380.AcuriteAtlasPacket": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\": \"2019-12-14 16:57:58\", \"model\": \"Acurite-Atlas\", \"id\": 896, \"channel\": \"A\", \"sequence_num\": 0, \"battery_ok\": 1, \"message_type\": 39, \"wind_avg_mi_h\": 6.000, \"uv\": 0, \"lux\": 22900, \"byte8\": 0, \"byte9\": 37, \"byte89\": 37}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1576342678,
+    "usUnits": 1,
+    "model.0380.AcuriteAtlasPacket": "Acurite-Atlas",
+    "channel.0380.AcuriteAtlasPacket": "A",
+    "sequence_num.0380.AcuriteAtlasPacket": 0,
+    "message_type.0380.AcuriteAtlasPacket": 39,
+    "wind_speed.0380.AcuriteAtlasPacket": 6.0,
+    "uv.0380.AcuriteAtlasPacket": 0,
+    "lux.0380.AcuriteAtlasPacket": 22900,
+    "battery.0380.AcuriteAtlasPacket": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2021-12-27 02:53:38\", \"model\" : \"Acurite-3n1\", \"subtype\" : 32, \"id\" : 7220, \"channel\" : \"B\", \"sequence_num\" : 1, \"battery_ok\" : 1, \"wind_avg_mi_h\" : 5.000, \"temperature_F\" : 5.100, \"humidity\" : 65, \"mic\" : \"CHECKSUM\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1640573618,
+    "usUnits": 1,
+    "model.1C34.Acurite3n1PacketV2": "Acurite-3n1",
+    "channel.1C34.Acurite3n1PacketV2": "B",
+    "sequence_num.1C34.Acurite3n1PacketV2": 1,
+    "battery.1C34.Acurite3n1PacketV2": 0,
+    "msg_type.1C34.Acurite3n1PacketV2": 32,
+    "humidity.1C34.Acurite3n1PacketV2": 65.0,
+    "temperature.1C34.Acurite3n1PacketV2": 5.1,
+    "wind_speed.1C34.Acurite3n1PacketV2": 5.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-01-16 02:34:12\", \"model\" : \"Acurite 5n1 sensor\", \"sensor_id\" : 3066, \"channel\" : \"C\", \"sequence_num\" : 1, \"battery\" : \"OK\", \"message_type\" : 49, \"wind_speed\" : 0.000, \"wind_dir_deg\" : 67.500, \"wind_dir\" : \"ENE\", \"rainfall_accumulation\" : 0.000, \"raincounter_raw\" : 8978}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1484534052,
+    "usUnits": 1,
+    "channel.0BFA.Acurite5n1Packet": "C",
+    "battery.0BFA.Acurite5n1Packet": 0,
+    "status.0BFA.Acurite5n1Packet": null,
+    "wind_speed.0BFA.Acurite5n1Packet": null,
+    "wind_dir.0BFA.Acurite5n1Packet": 67.5,
+    "rain_total.0BFA.Acurite5n1Packet": 89.78
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-01-16 02:37:33\", \"model\" : \"Acurite 5n1 sensor\", \"sensor_id\" : 3066, \"channel\" : \"C\", \"sequence_num\" : 1, \"battery\" : \"OK\", \"message_type\" : 56, \"wind_speed\" : 0.000, \"temperature_F\" : 27.500, \"humidity\" : 56}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1484534253,
+    "usUnits": 1,
+    "channel.0BFA.Acurite5n1Packet": "C",
+    "battery.0BFA.Acurite5n1Packet": 0,
+    "status.0BFA.Acurite5n1Packet": null,
+    "wind_speed.0BFA.Acurite5n1Packet": null,
+    "temperature.0BFA.Acurite5n1Packet": 27.5,
+    "humidity.0BFA.Acurite5n1Packet": 56.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-12-24 02:07:00\", \"model\" : \"Acurite 5n1 sensor\", \"sensor_id\" : 2662, \"channel\" : \"A\", \"sequence_num\" : 2, \"battery\" : \"OK\", \"message_type\" : 56, \"wind_speed_mph\" : 0.000, \"temperature_F\" : 47.500, \"humidity\" : 74}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1514081220,
+    "usUnits": 1,
+    "channel.0A66.Acurite5n1Packet": "A",
+    "battery.0A66.Acurite5n1Packet": 0,
+    "status.0A66.Acurite5n1Packet": null,
+    "wind_speed.0A66.Acurite5n1Packet": 0.0,
+    "temperature.0A66.Acurite5n1Packet": 47.5,
+    "humidity.0A66.Acurite5n1Packet": 74.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-12-24 02:07:18\", \"model\" : \"Acurite 5n1 sensor\", \"sensor_id\" : 2662, \"channel\" : \"A\", \"sequence_num\" : 2, \"battery\" : \"OK\", \"message_type\" : 49, \"wind_speed_mph\" : 0.000, \"wind_dir_deg\" : 157.500, \"wind_dir\" : \"SSE\", \"rainfall_accumulation_inch\" : 0.000, \"raincounter_raw\" : 421}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1514081238,
+    "usUnits": 1,
+    "channel.0A66.Acurite5n1Packet": "A",
+    "battery.0A66.Acurite5n1Packet": 0,
+    "status.0A66.Acurite5n1Packet": null,
+    "wind_speed.0A66.Acurite5n1Packet": 0.0,
+    "wind_dir.0A66.Acurite5n1Packet": 157.5,
+    "rain_total.0A66.Acurite5n1Packet": 4.21
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2019-01-04 02:37:10\", \"model\" : \"Acurite 5n1 sensor\", \"sensor_id\" : 2662, \"channel\" : \"A\", \"sequence_num\" : 1, \"battery\" : \"OK\", \"message_type\" : 56, \"wind_speed_kph\" : 0.000, \"temperature_F\" : 42.400, \"humidity\" : 83}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1546569430,
+    "usUnits": 1,
+    "channel.0A66.Acurite5n1Packet": "A",
+    "battery.0A66.Acurite5n1Packet": 0,
+    "status.0A66.Acurite5n1Packet": null,
+    "wind_speed.0A66.Acurite5n1Packet": 0.0,
+    "temperature.0A66.Acurite5n1Packet": 42.4,
+    "humidity.0A66.Acurite5n1Packet": 83.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2019-01-04 02:37:28\", \"model\" : \"Acurite 5n1 sensor\", \"sensor_id\" : 2662, \"channel\" : \"A\", \"sequence_num\" : 0, \"battery\" : \"LOW\", \"message_type\" : 49, \"wind_speed_kph\" : 0.000, \"wind_dir_deg\" : 180.000, \"rain_inch\" : 28.970}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1546569448,
+    "usUnits": 1,
+    "channel.0A66.Acurite5n1Packet": "A",
+    "battery.0A66.Acurite5n1Packet": 1,
+    "status.0A66.Acurite5n1Packet": null,
+    "wind_speed.0A66.Acurite5n1Packet": 0.0,
+    "wind_dir.0A66.Acurite5n1Packet": 180.0,
+    "rain_total.0A66.Acurite5n1Packet": 28.97
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2019-07-29 07:46:22.482883\", \"protocol\" : 40, \"model\" : \"Acurite-5n1\", \"id\" : 1234, \"channel\" : \"B\", \"sequence_num\" : 1, \"battery_ok\" : 1, \"message_type\" : 56, \"wind_avg_km_h\" : 0.000, \"temperature_C\" : 20.500, \"humidity\" : 93, \"mod\" : \"ASK\", \"freq\" : 433.934, \"rssi\" : -1.719, \"snr\" : 24.404, \"noise\" : -26.124}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1564386382,
+    "usUnits": 1,
+    "protocol.04D2.Acurite5n1PacketV2": 40,
+    "model.04D2.Acurite5n1PacketV2": "Acurite-5n1",
+    "channel.04D2.Acurite5n1PacketV2": "B",
+    "sequence_num.04D2.Acurite5n1PacketV2": 1,
+    "battery.04D2.Acurite5n1PacketV2": 0,
+    "mod.04D2.Acurite5n1PacketV2": "ASK",
+    "freq.04D2.Acurite5n1PacketV2": 433.934,
+    "rssi.04D2.Acurite5n1PacketV2": -1.719,
+    "snr.04D2.Acurite5n1PacketV2": 24.404,
+    "noise.04D2.Acurite5n1PacketV2": -26.124,
+    "msg_type.04D2.Acurite5n1PacketV2": 56,
+    "wind_speed.04D2.Acurite5n1PacketV2": 0.0,
+    "temperature.04D2.Acurite5n1PacketV2": 68.9,
+    "humidity.04D2.Acurite5n1PacketV2": 93.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2020-02-05 02:20:54\", \"model\" : \"Acurite-5n1\", \"subtype\" : 56, \"id\" : 956, \"channel\" : \"A\", \"sequence_num\" : 2, \"battery_ok\" : 1, \"wind_avg_km_h\" : 3.483, \"temperature_F\" : 31.300, \"humidity\" : 66}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1580869254,
+    "usUnits": 1,
+    "protocol.03BC.Acurite5n1PacketV2": null,
+    "model.03BC.Acurite5n1PacketV2": "Acurite-5n1",
+    "channel.03BC.Acurite5n1PacketV2": "A",
+    "sequence_num.03BC.Acurite5n1PacketV2": 2,
+    "battery.03BC.Acurite5n1PacketV2": 0,
+    "mod.03BC.Acurite5n1PacketV2": null,
+    "freq.03BC.Acurite5n1PacketV2": null,
+    "rssi.03BC.Acurite5n1PacketV2": null,
+    "snr.03BC.Acurite5n1PacketV2": null,
+    "noise.03BC.Acurite5n1PacketV2": null,
+    "msg_type.03BC.Acurite5n1PacketV2": 56,
+    "wind_speed.03BC.Acurite5n1PacketV2": 2.164235193,
+    "temperature.03BC.Acurite5n1PacketV2": 31.3,
+    "humidity.03BC.Acurite5n1PacketV2": 66.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2020-10-26 22:09:12\", \"model\" : \"Acurite-5n1\", \"message_type\" : 49, \"id\" : 2662, \"channel\" : \"A\", \"sequence_num\" : 0, \"battery_ok\" : 1, \"wind_avg_km_h\" : 15.900, \"wind_dir_deg\" : 337.500, \"rain_in\" : 7.290, \"mic\" : \"CHECKSUM\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1603750152,
+    "usUnits": 1,
+    "protocol.0A66.Acurite5n1PacketV2": null,
+    "model.0A66.Acurite5n1PacketV2": "Acurite-5n1",
+    "channel.0A66.Acurite5n1PacketV2": "A",
+    "sequence_num.0A66.Acurite5n1PacketV2": 0,
+    "battery.0A66.Acurite5n1PacketV2": 0,
+    "mod.0A66.Acurite5n1PacketV2": null,
+    "freq.0A66.Acurite5n1PacketV2": null,
+    "rssi.0A66.Acurite5n1PacketV2": null,
+    "snr.0A66.Acurite5n1PacketV2": null,
+    "noise.0A66.Acurite5n1PacketV2": null,
+    "msg_type.0A66.Acurite5n1PacketV2": 49,
+    "wind_speed.0A66.Acurite5n1PacketV2": 9.8797989,
+    "wind_dir.0A66.Acurite5n1PacketV2": 337.5,
+    "rain_total.0A66.Acurite5n1PacketV2": 7.29
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2020-10-26 22:08:54\", \"model\" : \"Acurite-5n1\", \"message_type\" : 56, \"id\" : 2662, \"channel\" : \"A\", \"sequence_num\" : 2, \"battery_ok\" : 1, \"wind_avg_km_h\" : 9.278, \"temperature_F\" : 76.100, \"humidity\" : 15, \"mic\" : \"CHECKSUM\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1603750134,
+    "usUnits": 1,
+    "protocol.0A66.Acurite5n1PacketV2": null,
+    "model.0A66.Acurite5n1PacketV2": "Acurite-5n1",
+    "channel.0A66.Acurite5n1PacketV2": "A",
+    "sequence_num.0A66.Acurite5n1PacketV2": 2,
+    "battery.0A66.Acurite5n1PacketV2": 0,
+    "mod.0A66.Acurite5n1PacketV2": null,
+    "freq.0A66.Acurite5n1PacketV2": null,
+    "rssi.0A66.Acurite5n1PacketV2": null,
+    "snr.0A66.Acurite5n1PacketV2": null,
+    "noise.0A66.Acurite5n1PacketV2": null,
+    "msg_type.0A66.Acurite5n1PacketV2": 56,
+    "wind_speed.0A66.Acurite5n1PacketV2": 5.765080138,
+    "temperature.0A66.Acurite5n1PacketV2": 76.1,
+    "humidity.0A66.Acurite5n1PacketV2": 15.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2026-06-10 18:48:47\", \"model\" : \"Acurite-5n1\", \"message_type\" : 56, \"id\" : 858, \"channel\" : \"B\", \"sequence_num\" : 0, \"battery_ok\" : 1, \"wind_avg_mi_h\" : 1.650, \"temperature_F\" : 87.800, \"humidity\" : 62, \"mic\" : \"CHECKSUM\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1781117327,
+    "usUnits": 1,
+    "protocol.035A.Acurite5n1PacketV2": null,
+    "model.035A.Acurite5n1PacketV2": "Acurite-5n1",
+    "channel.035A.Acurite5n1PacketV2": "B",
+    "sequence_num.035A.Acurite5n1PacketV2": 0,
+    "battery.035A.Acurite5n1PacketV2": 0,
+    "mod.035A.Acurite5n1PacketV2": null,
+    "freq.035A.Acurite5n1PacketV2": null,
+    "rssi.035A.Acurite5n1PacketV2": null,
+    "snr.035A.Acurite5n1PacketV2": null,
+    "noise.035A.Acurite5n1PacketV2": null,
+    "msg_type.035A.Acurite5n1PacketV2": 56,
+    "wind_speed.035A.Acurite5n1PacketV2": 1.65,
+    "temperature.035A.Acurite5n1PacketV2": 87.8,
+    "humidity.035A.Acurite5n1PacketV2": 62.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2018-07-21 01:53:56\", \"model\" : \"Acurite tower sensor\", \"id\" : 13009, \"sensor_id\" : 13009, \"channel\" : \"A\", \"temperature_C\" : 15.000, \"humidity\" : 16, \"battery_low\" : 1}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1532138036,
+    "usUnits": 1,
+    "channel.32D1.AcuriteTowerPacket": "A",
+    "battery.32D1.AcuriteTowerPacket": 1,
+    "status.32D1.AcuriteTowerPacket": null,
+    "temperature.32D1.AcuriteTowerPacket": 59.0,
+    "humidity.32D1.AcuriteTowerPacket": 16.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2018-07-21 01:52:24\", \"model\" : \"Acurite tower sensor\", \"id\" : 13009, \"sensor_id\" : 13009, \"channel\" : \"A\", \"temperature_C\" : 15.600, \"humidity\" : 16, \"battery_low\" : 0}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1532137944,
+    "usUnits": 1,
+    "channel.32D1.AcuriteTowerPacket": "A",
+    "battery.32D1.AcuriteTowerPacket": 0,
+    "status.32D1.AcuriteTowerPacket": null,
+    "temperature.32D1.AcuriteTowerPacket": 60.08,
+    "humidity.32D1.AcuriteTowerPacket": 16.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-01-12 03:43:05\", \"model\" : \"Acurite tower sensor\", \"id\" : 521, \"channel\" : \"A\", \"temperature_C\" : 0.800, \"humidity\" : 68, \"battery\" : 0, \"status\" : 68}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1484192585,
+    "usUnits": 1,
+    "channel.0209.AcuriteTowerPacket": "A",
+    "battery.0209.AcuriteTowerPacket": 1,
+    "status.0209.AcuriteTowerPacket": 68,
+    "temperature.0209.AcuriteTowerPacket": 33.44,
+    "humidity.0209.AcuriteTowerPacket": 68.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-01-12 03:43:11\", \"model\" : \"Acurite tower sensor\", \"id\" : 5585, \"channel\" : \"C\", \"temperature_C\" : 21.100, \"humidity\" : 32, \"battery\" : 0, \"status\" : 68}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1484192591,
+    "usUnits": 1,
+    "channel.15D1.AcuriteTowerPacket": "C",
+    "battery.15D1.AcuriteTowerPacket": 1,
+    "status.15D1.AcuriteTowerPacket": 68,
+    "temperature.15D1.AcuriteTowerPacket": 69.98,
+    "humidity.15D1.AcuriteTowerPacket": 32.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2019-07-29 07:44:23.005624\", \"protocol\" : 40, \"model\" : \"Acurite-Tower\", \"id\" : 1234, \"sensor_id\" : 1234, \"channel\" : \"A\", \"temperature_C\" : 22.600, \"humidity\" : 45, \"battery_ok\" : 0, \"mod\" : \"ASK\", \"freq\" : 433.938, \"rssi\" : -0.134, \"snr\" : 14.391, \"noise\" : -14.525}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1564386263,
+    "usUnits": 1,
+    "protocol.04D2.AcuriteTowerPacketV2": 40,
+    "model.04D2.AcuriteTowerPacketV2": "Acurite-Tower",
+    "sensor_id.04D2.AcuriteTowerPacketV2": "04d2",
+    "channel.04D2.AcuriteTowerPacketV2": "A",
+    "humidity.04D2.AcuriteTowerPacketV2": 45.0,
+    "temperature.04D2.AcuriteTowerPacketV2": 72.68,
+    "battery.04D2.AcuriteTowerPacketV2": 1,
+    "mod.04D2.AcuriteTowerPacketV2": "ASK",
+    "freq.04D2.AcuriteTowerPacketV2": 433.938,
+    "rssi.04D2.AcuriteTowerPacketV2": -0.134,
+    "snr.04D2.AcuriteTowerPacketV2": 14.391,
+    "noise.04D2.AcuriteTowerPacketV2": -14.525
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2021-12-20 20:00:59\", \"model\" : \"Acurite-Tower\", \"id\" : 11041, \"channel\" : \"B\", \"battery_ok\" : 1, \"temperature_C\" : -3.500, \"humidity\" : 71, \"mic\" : \"CHECKSUM\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1640030459,
+    "usUnits": 1,
+    "protocol.2B21.AcuriteTowerPacketV2": null,
+    "model.2B21.AcuriteTowerPacketV2": "Acurite-Tower",
+    "sensor_id.2B21.AcuriteTowerPacketV2": "0000",
+    "channel.2B21.AcuriteTowerPacketV2": "B",
+    "humidity.2B21.AcuriteTowerPacketV2": 71.0,
+    "temperature.2B21.AcuriteTowerPacketV2": 25.7,
+    "battery.2B21.AcuriteTowerPacketV2": 0,
+    "mod.2B21.AcuriteTowerPacketV2": null,
+    "freq.2B21.AcuriteTowerPacketV2": null,
+    "rssi.2B21.AcuriteTowerPacketV2": null,
+    "snr.2B21.AcuriteTowerPacketV2": null,
+    "noise.2B21.AcuriteTowerPacketV2": null
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-03-04 16:18:12\", \"model\" : \"Acurite 606TX Sensor\", \"id\" : 48, \"battery\" : \"OK\", \"temperature_C\" : -1.100}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1488644292,
+    "usUnits": 1,
+    "temperature.48.Acurite606TXPacket": 30.02,
+    "battery.48.Acurite606TXPacket": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2021-02-23 16:24:07\", \"model\" : \"Acurite-606TX\", \"id\" : 153, \"battery_ok\" : 1, \"temperature_C\" : 18.800, \"mic\" : \"CHECKSUM\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1614097447,
+    "usUnits": 1,
+    "temperature.153.Acurite606TXPacketV2": 65.84,
+    "battery.153.Acurite606TXPacketV2": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2021-10-26 23:39:49\", \"model\" : \"Acurite-606TX\", \"id\" : 194, \"battery_ok\" : 1, \"temperature_C\" : 19.200, \"mic\" : \"CHECKSUM\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1635291589,
+    "usUnits": 1,
+    "temperature.194.Acurite606TXPacketV2": 66.56,
+    "battery.194.Acurite606TXPacketV2": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2019-12-05 16:32:20\", \"model\" : \"Acurite-Rain899\", \"id\" : 1699, \"channel\" : 0, \"battery_ok\" : 0, \"rain_mm\" : 6.096}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1575563540,
+    "usUnits": 1,
+    "model.06A3.AcuriteRain899Packet": "Acurite-Rain899",
+    "channel.06A3.AcuriteRain899Packet": 0,
+    "battery.06A3.AcuriteRain899Packet": 1,
+    "rain_total.06A3.AcuriteRain899Packet": 0.24000000000000002
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2018-04-22 18:01:03\", \"model\" : \"Acurite 986 Sensor\", \"id\" : 43248, \"channel\" : \"1R\", \"temperature_F\" : 69, \"battery\" : \"OK\", \"status\" : 0}"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2020-10-19 07:00:32\", \"model\" : \"Acurite-986\", \"id\" : 9534, \"channel\" : \"2F\", \"battery_ok\" : 1, \"temperature_F\" : -10.000, \"status\" : 0, \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1603090832,
+    "usUnits": 1,
+    "channel.9534.Acurite986Packet": "2F",
+    "battery.9534.Acurite986Packet": 0,
+    "temperature.9534.Acurite986Packet": -10.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2018-04-21 19:12:53\", \"model\" : \"Acurite Lightning 6045M\", \"id\" : 151, \"channel\" : \"C\", \"temperature_F\" : 66.900, \"humidity\" : 33, \"strike_count\" : 47, \"storm_dist\" : 12, \"active\" : 1, \"rfi\" : 0, \"ussb1\" : 1, \"battery\" : \"LOW\", \"exception\" : 0, \"raw_msg\" : \"0097af2150f9afcc2b\"}"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2020-10-13 22:49:34\", \"model\" : \"Acurite-6045M\", \"id\" : 15431, \"channel\" : \"A\", \"battery_ok\" : 0, \"temperature_F\" : 91.800, \"humidity\" : 21, \"strike_count\" : 171, \"storm_dist\" : 12, \"active\" : 1, \"rfi\" : 0, \"exception\" : 0, \"raw_msg\" : \"fc47af95d2de55cc58\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1602629374,
+    "usUnits": 1,
+    "channel.3C47.AcuriteLightningPacket": "A",
+    "temperature.3C47.AcuriteLightningPacket": 91.8,
+    "battery.3C47.AcuriteLightningPacket": 1,
+    "humidity.3C47.AcuriteLightningPacket": 21,
+    "active.3C47.AcuriteLightningPacket": 1,
+    "rfi.3C47.AcuriteLightningPacket": 0,
+    "exception.3C47.AcuriteLightningPacket": 0,
+    "strikes_total.3C47.AcuriteLightningPacket": 171,
+    "distance.3C47.AcuriteLightningPacket": 12
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-03-09 21:59:11\", \"model\" : \"00275rm\", \"probe\" : 2, \"id\" : 3942, \"battery\" : \"OK\", \"temperature_C\" : 23.300, \"humidity\" : 34, \"ptemperature_C\" : 22.700, \"crc\" : \"ok\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1489096751,
+    "usUnits": 16,
+    "probe.0F66.Acurite00275MPacket": 2,
+    "battery.0F66.Acurite00275MPacket": 0,
+    "temperature_probe.0F66.Acurite00275MPacket": 22.7,
+    "temperature.0F66.Acurite00275MPacket": 23.3,
+    "humidity.0F66.Acurite00275MPacket": 34.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-03-09 21:59:11\", \"model\" : \"00275rm\", \"probe\" : 2, \"id\" : 3942, \"battery\" : \"OK\", \"temperature_C\" : 23.300, \"humidity\" : 34, \"temperature_1_C\" : 22.700, \"crc\" : \"ok\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1489096751,
+    "usUnits": 16,
+    "probe.0F66.Acurite00275MPacket": 2,
+    "battery.0F66.Acurite00275MPacket": 0,
+    "temperature_probe.0F66.Acurite00275MPacket": 22.7,
+    "temperature.0F66.Acurite00275MPacket": 23.3,
+    "humidity.0F66.Acurite00275MPacket": 34.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-09-14 20:24:43\", \"model\" : \"WT450 sensor\", \"id\" : 1, \"channel\" : 2, \"battery\" : \"OK\", \"temperature_C\" : 25.090, \"humidity\" : 49}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1505420683,
+    "usUnits": 16,
+    "sid.1:2.AcuriteWT450Packet": 1,
+    "channel.1:2.AcuriteWT450Packet": 2,
+    "battery.1:2.AcuriteWT450Packet": 0,
+    "temperature.1:2.AcuriteWT450Packet": 25.09,
+    "humidity.1:2.AcuriteWT450Packet": 49.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-09-14 20:24:44\", \"model\" : \"WT450 sensor\", \"id\" : 1, \"channel\" : 2, \"battery\" : \"OK\", \"temperature_C\" : 25.110, \"humidity\" : 49}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1505420684,
+    "usUnits": 16,
+    "sid.1:2.AcuriteWT450Packet": 1,
+    "channel.1:2.AcuriteWT450Packet": 2,
+    "battery.1:2.AcuriteWT450Packet": 0,
+    "temperature.1:2.AcuriteWT450Packet": 25.11,
+    "humidity.1:2.AcuriteWT450Packet": 49.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-09-14 20:24:44\", \"model\" : \"WT450 sensor\", \"id\" : 1, \"channel\" : 2, \"battery\" : \"OK\", \"temperature_C\" : 25.120, \"humidity\" : 49}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1505420684,
+    "usUnits": 16,
+    "sid.1:2.AcuriteWT450Packet": 1,
+    "channel.1:2.AcuriteWT450Packet": 2,
+    "battery.1:2.AcuriteWT450Packet": 0,
+    "temperature.1:2.AcuriteWT450Packet": 25.12,
+    "humidity.1:2.AcuriteWT450Packet": 49.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2024-12-28 09:06:10\", \"model\" : \"AlectoV1-Temperature\", \"id\" : 33, \"channel\" : 1, \"battery_ok\" : 1, \"temperature_C\" : -2.200, \"humidity\" : 51, \"mic\" : \"CHECKSUM\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1735376770,
+    "usUnits": 17,
+    "channel.33.AlectoV1TemperaturePacket": 1,
+    "temperature.33.AlectoV1TemperaturePacket": -2.2,
+    "humidity.33.AlectoV1TemperaturePacket": 51.0,
+    "battery.33.AlectoV1TemperaturePacket": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2024-12-28 09:06:41\", \"model\" : \"AlectoV1-Wind\", \"id\" : 33, \"channel\" : 1, \"battery_ok\" : 1, \"wind_avg_m_s\" : 0.800, \"wind_max_m_s\" : 1.000, \"wind_dir_deg\" : 180, \"mic\" : \"CHECKSUM\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1735376801,
+    "usUnits": 17,
+    "channel.33.AlectoV1WindPacket": 1,
+    "wind_speed.33.AlectoV1WindPacket": 0.8,
+    "wind_gust.33.AlectoV1WindPacket": 1.0,
+    "wind_dir.33.AlectoV1WindPacket": 180,
+    "battery.33.AlectoV1WindPacket": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2024-12-28 09:06:31\", \"model\" : \"AlectoV1-Rain\", \"id\" : 202, \"channel\" : 0, \"battery_ok\" : 1, \"rain_mm\" : 54.750, \"mic\" : \"CHECKSUM\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1735376791,
+    "usUnits": 17,
+    "channel.202.AlectoV1RainPacket": 0,
+    "rain_total.202.AlectoV1RainPacket": 54.75,
+    "battery.202.AlectoV1RainPacket": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-01-21 13:01:30\", \"model\" : \"Ambient Weather F007TH Thermo-Hygrometer\", \"device\" : 80, \"channel\" : 1, \"temperature_F\" : 61.800, \"humidity\" : 10}"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2020-02-05 19:33:11\", \"model\" : \"Ambientweather-F007TH\", \"id\" : 201, \"channel\" : 5, \"battery_ok\" : 1, \"temperature_F\" : 39.400, \"humidity\" : 60, \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1580931191,
+    "usUnits": 1,
+    "temperature.5:201.AmbientF007THPacket": 39.4,
+    "humidity.5:201.AmbientF007THPacket": 60.0,
+    "battery.5:201.AmbientF007THPacket": 0,
+    "mod.5:201.AmbientF007THPacket": null,
+    "freq.5:201.AmbientF007THPacket": null,
+    "rssi.5:201.AmbientF007THPacket": null,
+    "snr.5:201.AmbientF007THPacket": null,
+    "noise.5:201.AmbientF007THPacket": null
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2021-06-14 21:38:43\", \"model\" : \"AmbientWeather-TX8300\", \"id\" : 116, \"channel\" : 1, \"battery\" : 2, \"temperature_C\" : 28.500, \"mic\" : \"CHECKSUM\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1623706723,
+    "usUnits": 16,
+    "channel.116.AmbientTX8300Packet": 1,
+    "battery.116.AmbientTX8300Packet": 1,
+    "temperature.116.AmbientTX8300Packet": 28.5
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2019-02-14 17:24:41.259441\", \"protocol\" : 113, \"model\" : \"AmbientWeather-WH31E\", \"id\" : 24, \"channel\" : 1, \"battery\" : \"OK\", \"temperature_C\" : 6.000, \"humidity\" : 42, \"data\" :\"2f00000000\", \"mic\" : \"CRC\", \"mod\" : \"FSK\", \"freq1\" : 914.984, \"freq2\" : 914.906, \"rssi\" : -13.328, \"snr\" : 13.197, \"noise\" : -26.525}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1550165081,
+    "usUnits": 17,
+    "temperature.24.AmbientWH31EPacket": 6.0,
+    "humidity.24.AmbientWH31EPacket": 42.0,
+    "battery.24.AmbientWH31EPacket": 0,
+    "channel.24.AmbientWH31EPacket": 1,
+    "rssi.24.AmbientWH31EPacket": -13,
+    "snr.24.AmbientWH31EPacket": 13.197,
+    "noise.24.AmbientWH31EPacket": -26.525
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-09-14 20:24:43\", \"model\" : \"Auriol-HG02832\", \"id\" : 1, \"channel\" : 2, \"battery\" : \"OK\", \"temperature_C\" : 25.090, \"humidity\" : 49}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1505420683,
+    "usUnits": 16,
+    "sid.1:2.AuriolHG02832Packet": 1,
+    "channel.1:2.AuriolHG02832Packet": 2,
+    "battery.1:2.AuriolHG02832Packet": 0,
+    "temperature.1:2.AuriolHG02832Packet": 25.09,
+    "humidity.1:2.AuriolHG02832Packet": 49.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-09-14 20:24:44\", \"model\" : \"Auriol-HG02832\", \"id\" : 1, \"channel\" : 2, \"battery\" : \"OK\", \"temperature_C\" : 25.110, \"humidity\" : 49}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1505420684,
+    "usUnits": 16,
+    "sid.1:2.AuriolHG02832Packet": 1,
+    "channel.1:2.AuriolHG02832Packet": 2,
+    "battery.1:2.AuriolHG02832Packet": 0,
+    "temperature.1:2.AuriolHG02832Packet": 25.11,
+    "humidity.1:2.AuriolHG02832Packet": 49.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-09-14 20:24:44\", \"model\" : \"Auriol-HG02832\", \"id\" : 1, \"channel\" : 2, \"battery\" : \"OK\", \"temperature_C\" : 25.120, \"humidity\" : 49}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1505420684,
+    "usUnits": 16,
+    "sid.1:2.AuriolHG02832Packet": 1,
+    "channel.1:2.AuriolHG02832Packet": 2,
+    "battery.1:2.AuriolHG02832Packet": 0,
+    "temperature.1:2.AuriolHG02832Packet": 25.12,
+    "humidity.1:2.AuriolHG02832Packet": 49.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2022-03-01 14:11:42\", \"model\" : \"Cotech-367959\", \"id\" : 24, \"battery_ok\" : 1, \"temperature_F\" : 46.900, \"humidity\" : 62, \"rain_mm\" : 18.600, \"wind_dir_deg\" : 16, \"wind_avg_m_s\" : 0.600, \"wind_max_m_s\" : 0.700, \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1646143902,
+    "usUnits": 17,
+    "battery.24.Cotech367959Packet": 0,
+    "temperature.24.Cotech367959Packet": 8.277777777777777,
+    "humidity.24.Cotech367959Packet": 62.0,
+    "wind_gust.24.Cotech367959Packet": 0.7,
+    "wind_speed.24.Cotech367959Packet": 0.6,
+    "wind_dir.24.Cotech367959Packet": 16.0,
+    "rain_total.24.Cotech367959Packet": 18.6,
+    "uv_index.24.Cotech367959Packet": null,
+    "luminosity.24.Cotech367959Packet": null
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2020-02-05 12:37:05\", \"model\" : \"EcoWitt-WH40\", \"id\" : 52591, \"rain_mm\" : 0.800, \"data\" : \"0002ed0000\", \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1580906225,
+    "usUnits": 17,
+    "rain_total.52591.EcoWittWH40Packet": 0.8,
+    "battery.52591.EcoWittWH40Packet": null,
+    "supplyVoltage.52591.EcoWittWH40Packet": null,
+    "freq1.52591.EcoWittWH40Packet": null,
+    "freq2.52591.EcoWittWH40Packet": null,
+    "rssi.52591.EcoWittWH40Packet": null,
+    "snr.52591.EcoWittWH40Packet": null,
+    "noise.52591.EcoWittWH40Packet": null
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2022-09-26 00:47:41\", \"model\" : \"EcoWitt-WS68\", \"id\" : 388, \"battery_raw\" : 90, \"battery_ok\" : 1, \"lux_raw\" : 0, \"wind_avg_raw\" : 0, \"wind_max_raw\" : 0, \"wind_dir_deg\" : 157, \"data\" : \"00 210\", \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1664153261,
+    "usUnits": 17,
+    "battery.388.EcoWittWS68Packet": 0,
+    "supplyVoltage.388.EcoWittWS68Packet": 180.0,
+    "luminosity.388.EcoWittWS68Packet": 0.0,
+    "wind_speed.388.EcoWittWS68Packet": 0.0,
+    "wind_gust.388.EcoWittWS68Packet": 0.0,
+    "wind_dir.388.EcoWittWS68Packet": 157.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2024-10-25 17:51:33\", \"model\" : \"Emax-EM3551H\", \"id\" : 1001, \"channel\" : 4, \"battery_ok\" : 1, \"temperature_F\" : 55.700,\"humidity\" : 95, \"wind_avg_km_h\" : 0.000, \"wind_max_km_h\" : 0.000, \"wind_dir_deg\" : 169, \"rain_mm\" : 0.000, \"mic\" : \"CHECKSUM\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1729878693,
+    "usUnits": 16,
+    "battery.1001.EM3551HPacket": 0,
+    "temperature.1001.EM3551HPacket": 13.16666666666667,
+    "humidity.1001.EM3551HPacket": 95.0,
+    "wind_gust.1001.EM3551HPacket": 0.0,
+    "wind_speed.1001.EM3551HPacket": 0.0,
+    "wind_dir.1001.EM3551HPacket": 169.0,
+    "rain_total.1001.EM3551HPacket": 0.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2022-06-30 08:29:25\", \"model\" : \"Esperanza-EWS\", \"id\" : 198, \"channel\" : 2, \"temperature_F\" : 69.200, \"humidity\" : 0, \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1656577765,
+    "usUnits": 1,
+    "temperature.198.EsperanzaEWSPacket": 69.2,
+    "humidity.198.EsperanzaEWSPacket": 0.0,
+    "channel.198.EsperanzaEWSPacket": 2
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2016-11-04 14:40:38\", \"model\" : \"Fine Offset WH1080 weather station\", \"msg_type\" : 0, \"id\" : 38, \"temperature_C\" : 12.500, \"humidity\" : 68, \"direction_str\" : \"E\", \"direction_deg\" : \"90\", \"speed\" : 8.568, \"gust\" : 12.240, \"rain\" : 249.600, \"battery\" : \"OK\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1478270438,
+    "usUnits": 16,
+    "msg_type.38.FOWH1080Packet": 0,
+    "temperature.38.FOWH1080Packet": 12.5,
+    "humidity.38.FOWH1080Packet": 68.0,
+    "wind_dir.38.FOWH1080Packet": 90.0,
+    "wind_speed.38.FOWH1080Packet": 8.568,
+    "wind_gust.38.FOWH1080Packet": 12.24,
+    "rain_total.38.FOWH1080Packet": 24.96,
+    "battery.38.FOWH1080Packet": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2020-10-13 14:04:48\", \"model\" : \"Fine Offset Electronics WH1080/WH3080 Weather Station\", \"msg_type\" : 0, \"id\" : 14, \"battery\" : \"OK\", \"temperature_C\" : 24.400, \"humidity\" : 35, \"direction_deg\" : 225, \"speed\" : 0.000, \"gust\" : 0.000, \"rain\" : 41.400, \"mic\" : \"CRC\"}"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2020-10-13 14:04:48\", \"model\" : \"Fineoffset-WHx080\", \"subtype\" : 0, \"id\" : 14, \"battery_ok\" : 1, \"temperature_C\" : 24.400, \"humidity\" : 35, \"wind_dir_deg\" : 225, \"wind_avg_km_h\" : 0.000, \"wind_max_km_h\" : 0.000, \"rain_mm\" : 41.400, \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1602597888,
+    "usUnits": 16,
+    "msg_type.14.FOWHx080Packet": 0,
+    "battery.14.FOWHx080Packet": 0,
+    "temperature.14.FOWHx080Packet": 24.4,
+    "humidity.14.FOWHx080Packet": 35.0,
+    "wind_dir.14.FOWHx080Packet": 225.0,
+    "wind_speed.14.FOWHx080Packet": 0.0,
+    "wind_gust.14.FOWHx080Packet": 0.0,
+    "rain_total.14.FOWHx080Packet": 4.14
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2022-08-17 15:58:42\", \"model\" : \"Fineoffset-WHx080\", \"subtype\" : 0, \"id\" : 14, \"battery_ok\" : 1, \"temperature_C\" : 28.100, \"humidity\" : 36, \"wind_dir_deg\" : 338, \"wind_avg_km_h\" : 0.000, \"wind_max_km_h\" : 1.224, \"rain_mm\" : 614.400, \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1660751922,
+    "usUnits": 16,
+    "msg_type.14.FOWHx080Packet": 0,
+    "battery.14.FOWHx080Packet": 0,
+    "temperature.14.FOWHx080Packet": 28.1,
+    "humidity.14.FOWHx080Packet": 36.0,
+    "wind_dir.14.FOWHx080Packet": 338.0,
+    "wind_speed.14.FOWHx080Packet": 0.0,
+    "wind_gust.14.FOWHx080Packet": 1.224,
+    "rain_total.14.FOWHx080Packet": 61.44
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2022-08-14 17:22:30\", \"model\" : \"Fineoffset-WHx080\", \"subtype\" : 2, \"uv_sensor_id\" : 225, \"uv_status\" : \"OK\", \"uv_index\" : 1, \"lux\" : 2223.200, \"wm\" : 3.255, \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1660497750,
+    "usUnits": 16,
+    "msg_type.225.FOWHx080Packet": 2,
+    "uv_status.225.FOWHx080Packet": 0,
+    "uv_index.225.FOWHx080Packet": 1.0,
+    "luminosity.225.FOWHx080Packet": 2223.2,
+    "radiation.225.FOWHx080Packet": 3.255
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-05-15 17:21:07\", \"model\" : \"Fine Offset Electronics WH3080 Weather Station\", \"msg_type\" : 2, \"uv_sensor_id\" : 225, \"uv_status\" : \"OK\", \"uv_index\" : 1, \"lux\" : 7837.000, \"wm\" : 11.474, \"fc\" : 728.346}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1494868867,
+    "usUnits": 16,
+    "msg_type.225.FOWH3080Packet": 2,
+    "uv_index.225.FOWH3080Packet": 1.0,
+    "luminosity.225.FOWH3080Packet": 7837.0,
+    "radiation.225.FOWH3080Packet": 11.474,
+    "illumination.225.FOWH3080Packet": 728.346,
+    "uv_status.225.FOWH3080Packet": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2018-08-29 17:08:33\", \"model\" : \"Fine Offset Electronics, WH2 Temperature/Humidity sensor\", \"id\" : 129, \"temperature_C\" : 24.200, \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1535562513,
+    "usUnits": 16,
+    "temperature.129.FOWH2Packet": 24.2
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2019-10-27 14:51:21\", \"model\" : \"Fine Offset WH5 sensor\", \"id\" : 48, \"temperature_C\" : 11.700, \"humidity\" : 62, \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1572187881,
+    "usUnits": 16,
+    "temperature.48.FOWH5Packet": 11.7,
+    "humidity.48.FOWH5Packet": 62.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2019-02-11 03:44:32\", \"model\" : \"Fine Offset WH24\", \"id\" : 140, \"temperature_C\" : 12.600, \"humidity\" : 80, \"wind_dir_deg\" : 111, \"wind_speed_ms\" : 0.280, \"gust_speed_ms\" : 1.120, \"rainfall_mm\" : 1150.800, \"uv\" : 1, \"uvi\" : 0, \"light_lux\" : 0.000, \"battery\" : \"OK\", \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1549856672,
+    "usUnits": 17,
+    "temperature.140.FOWH24Packet": 12.6,
+    "humidity.140.FOWH24Packet": 80.0,
+    "wind_dir.140.FOWH24Packet": 111.0,
+    "wind_speed.140.FOWH24Packet": 0.28,
+    "wind_gust.140.FOWH24Packet": 1.12,
+    "rain_total.140.FOWH24Packet": 1150.8,
+    "uv_index.140.FOWH24Packet": 0.0,
+    "light.140.FOWH24Packet": 0.0,
+    "battery.140.FOWH24Packet": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2019-02-11 03:44:48\", \"model\" : \"Fine Offset WH24\", \"id\" : 140, \"temperature_C\" : 12.600, \"humidity\" : 80, \"wind_dir_deg\" : 109, \"wind_speed_ms\" : 0.980, \"gust_speed_ms\" : 1.120, \"rainfall_mm\" : 1150.800, \"uv\" : 1, \"uvi\" : 0, \"light_lux\" : 0.000, \"battery\" : \"OK\", \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1549856688,
+    "usUnits": 17,
+    "temperature.140.FOWH24Packet": 12.6,
+    "humidity.140.FOWH24Packet": 80.0,
+    "wind_dir.140.FOWH24Packet": 109.0,
+    "wind_speed.140.FOWH24Packet": 0.98,
+    "wind_gust.140.FOWH24Packet": 1.12,
+    "rain_total.140.FOWH24Packet": 1150.8,
+    "uv_index.140.FOWH24Packet": 0.0,
+    "light.140.FOWH24Packet": 0.0,
+    "battery.140.FOWH24Packet": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2020-08-01 14:03:52\", \"model\" : \"Fineoffset-WH24\", \"id\" : 247, \"battery_ok\" : 1, \"temperature_C\" : 30.600, \"humidity\" : 45, \"wind_dir_deg\" : 149, \"wind_avg_m_s\" : 0.000, \"wind_max_m_s\" : 0.000, \"rain_mm\" : 6.600, \"uv\" : 783, \"uvi\" : 1, \"light_lux\" : 28025.000, \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1596290632,
+    "usUnits": 17,
+    "temperature.247.FOWH24BPacket": 30.6,
+    "humidity.247.FOWH24BPacket": 45.0,
+    "wind_dir.247.FOWH24BPacket": 149.0,
+    "wind_speed.247.FOWH24BPacket": 0.0,
+    "wind_gust.247.FOWH24BPacket": 0.0,
+    "rain_total.247.FOWH24BPacket": 6.6,
+    "uv_index.247.FOWH24BPacket": 1.0,
+    "light.247.FOWH24BPacket": 28025.0,
+    "battery.247.FOWH24BPacket": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-03-25 05:33:57\", \"model\" : \"Fine Offset Electronics, WH25\", \"id\" : 239, \"temperature_C\" : 30.200, \"humidity\" : 68, \"pressure\" : 1008.000}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1490420037,
+    "usUnits": 16,
+    "temperature.239.FOWH2Packet": 30.2
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2018-10-10 13:37:11\", \"model\" : \"Fine Offset Electronics, WH25\", \"id\" : 21, \"temperature_C\" : 21.600, \"humidity\" : 66, \"pressure_hPa\" : 972.800, \"battery\" : \"OK\", \"mic\" : \"CHECKSUM\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1539178631,
+    "usUnits": 16,
+    "temperature.21.FOWH2Packet": 21.6
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2020-10-13 23:29:35\", \"model\" : \"Fineoffset-WH25\", \"id\" : 170, \"battery_ok\" : 0, \"temperature_C\" : 26.200, \"humidity\" : 36, \"pressure_hPa\" : 1009.900, \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1602631775,
+    "usUnits": 16,
+    "temperature.170.FOWH25Packet": 26.2,
+    "humidity.170.FOWH25Packet": 36.0,
+    "pressure.170.FOWH25Packet": 1009.9,
+    "battery.170.FOWH25Packet": 1
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2021-04-08 18:11:01\", \"model\" : \"Fineoffset-WH25\", \"id\" : 121, \"battery_ok\" : 1, \"temperature_C\" : 20.000, \"humidity\" : 48, \"pressure_hPa\" : 979.100, \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1617905461,
+    "usUnits": 16,
+    "temperature.121.FOWH25Packet": 20.0,
+    "humidity.121.FOWH25Packet": 48.0,
+    "pressure.121.FOWH25Packet": 979.1,
+    "battery.121.FOWH25Packet": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2020-08-01 14:03:16\", \"model\" : \"Fineoffset-WH25\", \"id\" : 19, \"battery_ok\" : 1, \"temperature_C\" : 26.100, \"humidity\" : 49, \"pressure_hPa\" : 987.800, \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1596290596,
+    "usUnits": 16,
+    "temperature.19.FOWH25Packet": 26.1,
+    "humidity.19.FOWH25Packet": 49.0,
+    "pressure.19.FOWH25Packet": 987.8,
+    "battery.19.FOWH25Packet": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2019-04-08 07:06:03\", \"model\" : \"Fineoffset-WH32B\", \"id\" : 146, \"temperature_C\" : 16.900, \"humidity\" : 59, \"pressure_hPa\" : 1001.300, \"battery\" : \"OK\", \"mic\" : \"CHECKSUM\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1554707163,
+    "usUnits": 16,
+    "temperature.146.FOWH32BPacket": 16.9,
+    "humidity.146.FOWH32BPacket": 59.0,
+    "pressure.146.FOWH32BPacket": 1001.3,
+    "battery.146.FOWH32BPacket": 0,
+    "freq1.146.FOWH32BPacket": null,
+    "freq2.146.FOWH32BPacket": null,
+    "rssi.146.FOWH32BPacket": null,
+    "snr.146.FOWH32BPacket": null,
+    "noise.146.FOWH32BPacket": null
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2022-03-24 02:27:27\", \"model\" : \"Fineoffset-WH32B\", \"id\" : 114, \"battery_ok\" : 1, \"temperature_C\" : 20.700, \"humidity\" : 49, \"pressure_hPa\" : 960.300, \"mic\" : \"CRC\", \"mod\" : \"FSK\", \"freq1\" : 914.964, \"freq2\" : 915.026, \"rssi\" : -0.118, \"snr\" : 20.295, \"noise\" : -20.412}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1648088847,
+    "usUnits": 16,
+    "temperature.114.FOWH32BPacket": 20.7,
+    "humidity.114.FOWH32BPacket": 49.0,
+    "pressure.114.FOWH32BPacket": 960.3,
+    "battery.114.FOWH32BPacket": 0,
+    "freq1.114.FOWH32BPacket": 914.964,
+    "freq2.114.FOWH32BPacket": 915.026,
+    "rssi.114.FOWH32BPacket": -0.118,
+    "snr.114.FOWH32BPacket": 20.295,
+    "noise.114.FOWH32BPacket": -20.412
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2023-07-08 13:06:14\", \"model\" : \"Fineoffset-WH45\", \"id\" : 18034, \"battery_ok\" : 1.000, \"temperature_C\" : 20.400, \"humidity\" : 84, \"pm2_5_ug_m3\" : 1.800, \"pm10_ug_m3\" : 1.800, \"co2_ppm\" : 718, \"ext_power\" : 1, \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1688821574,
+    "usUnits": 16,
+    "battery.18034.FOWH45Packet": 0,
+    "co2_atm.18034.FOWH45Packet": 718.0,
+    "pm2_5_atm.18034.FOWH45Packet": 1.8,
+    "pm10_0_atm.18034.FOWH45Packet": 1.8,
+    "temperature.18034.FOWH45Packet": 20.4,
+    "humidity.18034.FOWH45Packet": 84.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2025-02-04 13:09:57\", \"model\" : \"Fineoffset-WH46\", \"id\" : 10514, \"battery_ok\" : 1.000, \"temperature_C\" : 22.500, \"humidity\" : 35, \"pm1_ug_m3\" : 2.300, \"pm2_5_ug_m3\" : 2.400, \"pm4_ug_m3\" : 2.400, \"pm10_ug_m3\" : 2.400, \"co2_ppm\" : 541, \"unknown\" : 400, \"ext_power\" : 1, \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1738674597,
+    "usUnits": 16,
+    "battery.10514.FOWH46Packet": 0,
+    "co2_atm.10514.FOWH46Packet": 541.0,
+    "pm1_0_atm.10514.FOWH46Packet": 2.3,
+    "pm2_5_atm.10514.FOWH46Packet": 2.4,
+    "pm4_0_atm.10514.FOWH46Packet": 2.4,
+    "pm10_0_atm.10514.FOWH46Packet": 2.4,
+    "temperature.10514.FOWH46Packet": 22.5,
+    "humidity.10514.FOWH46Packet": 35.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2021-04-15 15:07:05\", \"model\" : \"Fineoffset-WH51\", \"id\" : \"00df73\", \"battery_ok\" : 1.000, \"battery_mV\" : 1600, \"moisture\" : 0, \"boost\" : 0, \"ad_raw\" : 17, \"mic\" : \"CRC\", \"mod\" : \"FSK\", \"freq1\" : 915.024, \"freq2\" : 914.970, \"rssi\" : -2.258, \"snr\" : 35.115, \"noise\" : -37.373}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1618499225,
+    "usUnits": 16,
+    "soil_moisture_percent.00df73.FOWH51Packet": 0.0,
+    "boost.00df73.FOWH51Packet": 0.0,
+    "soil_moisture_raw.00df73.FOWH51Packet": 17.0,
+    "freq1.00df73.FOWH51Packet": 915.024,
+    "freq2.00df73.FOWH51Packet": 914.97,
+    "battery.00df73.FOWH51Packet": 0,
+    "battery_mV.00df73.FOWH51Packet": 1600.0,
+    "snr.00df73.FOWH51Packet": 35.115,
+    "rssi.00df73.FOWH51Packet": -2.258,
+    "noise.00df73.FOWH51Packet": -37.373
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2018-10-10 13:37:02\", \"model\" : \"Fine Offset WH65B\", \"id\" : 89, \"temperature_C\" : 17.600, \"humidity\" : 93, \"wind_dir_deg\" : 224, \"wind_speed_ms\" : 1.540, \"gust_speed_ms\" : 2.240, \"rainfall_mm\" : 325.500, \"uv\" : 130, \"uvi\" : 0, \"light_lux\" : 13454.000, \"battery\" : \"OK\", \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1539178622,
+    "usUnits": 17,
+    "temperature.89.FOWH65BPacket": 17.6,
+    "humidity.89.FOWH65BPacket": 93.0,
+    "wind_dir.89.FOWH65BPacket": 224.0,
+    "wind_speed.89.FOWH65BPacket": 1.54,
+    "wind_gust.89.FOWH65BPacket": 2.24,
+    "rain_total.89.FOWH65BPacket": 325.5,
+    "uv.89.FOWH65BPacket": 130.0,
+    "uv_index.89.FOWH65BPacket": 0.0,
+    "light.89.FOWH65BPacket": 13454.0,
+    "battery.89.FOWH65BPacket": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2020-04-26 19:41:10\", \"model\" : \"Fineoffset-WH65B\", \"id\" : 16, \"battery_ok\" : 1, \"temperature_C\" : 14.800, \"humidity\" : 50, \"wind_dir_deg\" : 336, \"wind_avg_m_s\" : 1.658, \"wind_max_m_s\" : 3.060, \"rain_mm\" : 76.454, \"uv\" : 1982, \"uvi\" : 4, \"light_lux\" : 69130.000, \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1587930070,
+    "usUnits": 17,
+    "temperature.16.FOWH65BAltPacket": 14.8,
+    "humidity.16.FOWH65BAltPacket": 50.0,
+    "wind_dir.16.FOWH65BAltPacket": 336.0,
+    "wind_speed.16.FOWH65BAltPacket": 1.658,
+    "wind_gust.16.FOWH65BAltPacket": 3.06,
+    "rain_total.16.FOWH65BAltPacket": 76.454,
+    "uv.16.FOWH65BAltPacket": 1982.0,
+    "uv_index.16.FOWH65BAltPacket": 4.0,
+    "light.16.FOWH65BAltPacket": 69130.0,
+    "battery.16.FOWH65BAltPacket": 0,
+    "rssi.16.FOWH65BAltPacket": null,
+    "snr.16.FOWH65BAltPacket": null,
+    "noise.16.FOWH65BAltPacket": null
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2020-07-22 04:47:47\", \"model\" : \"Fineoffset-WH65B\", \"id\" : 73, \"battery_ok\" : 1, \"temperature_C\" : 24.900, \"humidity\" : 53, \"wind_dir_deg\" : 21, \"wind_avg_m_s\" : 0.000, \"wind_max_m_s\" : 0.000, \"rain_mm\" : 7.874, \"uv\" : 1, \"uvi\" : 0, \"light_lux\" : 0.000, \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1595393267,
+    "usUnits": 17,
+    "temperature.73.FOWH65BAltPacket": 24.9,
+    "humidity.73.FOWH65BAltPacket": 53.0,
+    "wind_dir.73.FOWH65BAltPacket": 21.0,
+    "wind_speed.73.FOWH65BAltPacket": 0.0,
+    "wind_gust.73.FOWH65BAltPacket": 0.0,
+    "rain_total.73.FOWH65BAltPacket": 7.874,
+    "uv.73.FOWH65BAltPacket": 1.0,
+    "uv_index.73.FOWH65BAltPacket": 0.0,
+    "light.73.FOWH65BAltPacket": 0.0,
+    "battery.73.FOWH65BAltPacket": 0,
+    "rssi.73.FOWH65BAltPacket": null,
+    "snr.73.FOWH65BAltPacket": null,
+    "noise.73.FOWH65BAltPacket": null
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2022-03-24 02:27:26\", \"model\" : \"Fineoffset-WH65B\", \"id\" : 86, \"battery_ok\" : 1, \"temperature_C\" : 2.400, \"humidity\" : 94, \"wind_dir_deg\" : 268, \"wind_avg_m_s\" : 0.701, \"wind_max_m_s\" : 1.020, \"rain_mm\" : 2411.222, \"uv\" : 2, \"uvi\" : 0, \"light_lux\" : 0.000, \"mic\" : \"CRC\", \"mod\" : \"FSK\", \"freq1\" : 914.965, \"freq2\" : 915.019, \"rssi\" : -0.120, \"snr\" : 20.011, \"noise\" : -20.130}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1648088846,
+    "usUnits": 17,
+    "temperature.86.FOWH65BAltPacket": 2.4,
+    "humidity.86.FOWH65BAltPacket": 94.0,
+    "wind_dir.86.FOWH65BAltPacket": 268.0,
+    "wind_speed.86.FOWH65BAltPacket": 0.701,
+    "wind_gust.86.FOWH65BAltPacket": 1.02,
+    "rain_total.86.FOWH65BAltPacket": 2411.222,
+    "uv.86.FOWH65BAltPacket": 2.0,
+    "uv_index.86.FOWH65BAltPacket": 0.0,
+    "light.86.FOWH65BAltPacket": 0.0,
+    "battery.86.FOWH65BAltPacket": 0,
+    "rssi.86.FOWH65BAltPacket": -0.12,
+    "snr.86.FOWH65BAltPacket": 20.011,
+    "noise.86.FOWH65BAltPacket": -20.13
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"@0.084044s\", \"model\" : \"Fine Offset Electronics, WH0290\", \"id\" : 204, \"pm2_5_ug_m3\" : 9, \"pm10_0_ug_m3\" : 10, \"mic\" : \"CHECKSUM\"}"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "{\"time\": \"2022-09-08 19:48:38\", \"model\": \"Endoffset-WH0290\", \" id \": 142,\" battery_ok \": 0.800,\" pm2_5_ug_m3 \": 2,\" estimated_pm10_0_ug_m3 \": 2,\" family \": 65,\" unknown1 \": 0,\" mic \":\" CRC \"}"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2021-06-30 20:37:11\", \"model\" : \"FineOffset-WH31L\", \"id\" : 67016, \"battery_ok\" : 0, \"state\" : 8, \"flags\" : 56, \"storm_dist_km\" : 10, \"strike_count\" : 2, \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1625085431,
+    "usUnits": 16,
+    "battery.67016.FOWH31LPacket": 1,
+    "strikes_total.67016.FOWH31LPacket": 2,
+    "distance.67016.FOWH31LPacket": 10,
+    "flags.67016.FOWH31LPacket": 56,
+    "state.67016.FOWH31LPacket": 8
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2022-07-06 21:06:18\", \"model\" : \"Fineoffset-WS80\", \"id\" : 589862, \"battery_ok\" : 1.170, \"battery_mV\" : 3280, \"temperature_C\" : 17.700, \"humidity\" : 67, \"wind_dir_deg\" : 268, \"wind_avg_m_s\" : 1.300, \"wind_max_m_s\" : 1.800, \"uvi\" : 0.000, \"light_lux\" : 0.000, \"flags\" : 170, \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1657141578,
+    "usUnits": 17,
+    "temperature.589862.FOWS80Packet": 17.7,
+    "humidity.589862.FOWS80Packet": 67.0,
+    "wind_dir.589862.FOWS80Packet": 268.0,
+    "wind_speed.589862.FOWS80Packet": 1.3,
+    "wind_gust.589862.FOWS80Packet": 1.8,
+    "rain_total.589862.FOWS80Packet": null,
+    "uv_index.589862.FOWS80Packet": 0.0,
+    "light.589862.FOWS80Packet": 0.0,
+    "voltage.589862.FOWS80Packet": 3.28
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2023-03-08 22:00:38\", \"model\" : \"Fineoffset-WS90\", \"id\" : 13355, \"battery_ok\" : 1.0, \"battery_mV\" : 3280, \"temperature_C\" : 5.700, \"humidity\" : 75, \"wind_dir_deg\" : 87, \"wind_avg_m_s\" : 1.300, \"wind_max_m_s\" : 1.600, \"uvi\" : 0.000, \"light_lux\" : 55300.000, \"flags\" : 129, \"rain_mm\" : 12.800, \"supercap_V\" : 3.200, \"data\" : \"01c00000192000fe7ff0ff0082\", \"mic\" : \"CRC\", \"mod\" : \"FSK\", \"freq1\" : 914.945, \"freq2\" : 915.039, \"rssi\" : -0.123, \"snr\" : 32.990, \"noise\" : -33.113}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1678312838,
+    "usUnits": 17,
+    "temperature.13355.FOWS90Packet": 5.7,
+    "humidity.13355.FOWS90Packet": 75.0,
+    "wind_dir.13355.FOWS90Packet": 87.0,
+    "wind_speed.13355.FOWS90Packet": 1.3,
+    "wind_gust.13355.FOWS90Packet": 1.6,
+    "rain_total.13355.FOWS90Packet": 12.8,
+    "uv_index.13355.FOWS90Packet": 0.0,
+    "light.13355.FOWS90Packet": 55300.0,
+    "battery.13355.FOWS90Packet": 0,
+    "supplyVoltage.13355.FOWS90Packet": 3.28,
+    "referenceVoltage.13355.FOWS90Packet": 3.2,
+    "freq1.13355.FOWS90Packet": 914.945,
+    "freq2.13355.FOWS90Packet": 915.039,
+    "rssi.13355.FOWS90Packet": -0.123,
+    "snr.13355.FOWS90Packet": 32.99,
+    "noise.13355.FOWS90Packet": -33.113
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2016-11-04 14:44:37\", \"model\" : \"HIDEKI TS04 sensor\", \"rc\" : 9, \"channel\" : 1, \"battery\" : \"OK\", \"temperature_C\" : 12.400, \"humidity\" : 61}"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2020-10-15 07:13:33\", \"model\" : \"Hideki-TS04\", \"id\" : 14, \"channel\" : 1, \"battery_ok\" : 1, \"temperature_C\" : 20.700, \"humidity\" : 10, \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1602746013,
+    "usUnits": 16,
+    "temperature.1:14.HidekiTS04Packet": 20.7,
+    "humidity.1:14.HidekiTS04Packet": 10.0,
+    "battery.1:14.HidekiTS04Packet": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-01-16 04:38:39\", \"model\" : \"HIDEKI Wind sensor\", \"rc\" : 0, \"channel\" : 4, \"battery\" : \"OK\", \"temperature_C\" : -4.400, \"windstrength\" : 2.897, \"winddirection\" : 292.500}"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2019-11-24 19:13:41\", \"model\" : \"HIDEKI Wind sensor\", \"rc\" : 3, \"channel\" : 4, \"battery\" : \"OK\", \"temperature_C\" : 11.000, \"wind_speed_mph\" : 1.300, \"gust_speed_mph\" : 0.100, \"wind_approach\" : 1, \"wind_direction\" : 270.000, \"mic\" : \"CRC\"}"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2021-02-07 03:44:54\", \"model\" : \"Hideki-Wind\", \"id\" : 8, \"channel\" : 4, \"battery_ok\" : 1, \"temperature_C\" : 15.200, \"wind_avg_mi_h\" : 2.600, \"wind_max_mi_h\" : 2.900, \"wind_approach\" : 1, \"wind_dir_deg\" : 337.500, \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1612669494,
+    "usUnits": 16,
+    "temperature.4:8.HidekiWindPacket": 15.2,
+    "wind_speed.4:8.HidekiWindPacket": 4.184284,
+    "wind_dir.4:8.HidekiWindPacket": 337.5,
+    "wind_gust.4:8.HidekiWindPacket": 4.667086,
+    "battery.4:8.HidekiWindPacket": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-01-16 04:38:50\", \"model\" : \"HIDEKI Rain sensor\", \"rc\" : 0, \"channel\" : 4, \"battery\" : \"OK\", \"rain\" : 2622.900}"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2019-11-24 19:13:52\", \"model\" : \"HIDEKI Rain sensor\", \"rc\" : 0, \"channel\" : 4, \"battery\" : \"OK\", \"rain_mm\" : 274.400, \"mic\" : \"CRC\"}"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2021-02-07 03:45:10\", \"model\" : \"Hideki-Rain\", \"id\" : 0, \"channel\" : 4, \"battery_ok\" : 1, \"rain_mm\" : 1382.500, \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1612669510,
+    "usUnits": 16,
+    "rain_total.4:0.HidekiRainPacket": 1382.5,
+    "battery.4:0.HidekiRainPacket": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2023-11-10 14:42:06\", \"model\" : \"Hideki-Rain\", \"id\" : 0, \"channel\" : 4, \"battery_ok\" : 1, \"rain_mm\" : 2255.400, \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1699627326,
+    "usUnits": 16,
+    "rain_total.4:0.HidekiRainPacket": 2255.4,
+    "battery.4:0.HidekiRainPacket": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2019-08-07 10:35:07\", \"model\" : \"Holman Industries WS5029 weather station\", \"id\" : 53761, \"temperature_C\" : 9.100, \"humidity\" : 102, \"rain_mm\" : 39.500, \"wind_avg_km_h\" : 0, \"direction_deg\" : 338}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1565174107,
+    "usUnits": 17,
+    "temperature.53761.HolmanWS5029Packet": 9.1,
+    "humidity.53761.HolmanWS5029Packet": 102.0,
+    "wind_dir.53761.HolmanWS5029Packet": 338.0,
+    "wind_speed.53761.HolmanWS5029Packet": 0.0,
+    "rain_total.53761.HolmanWS5029Packet": 39.5
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2021-03-03 10:19:53\", \"model\" : \"inFactory-TH\", \"id\" : 195, \"channel\" : 1, \"battery_ok\" : 1, \"temperature_F\" : 73.200, \"humidity\" : 55, \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1614766793,
+    "usUnits": 1,
+    "temperature.195.InFactoryTHPacket": 73.2,
+    "humidity.195.InFactoryTHPacket": 55.0,
+    "battery.195.InFactoryTHPacket": 0,
+    "channel.195.InFactoryTHPacket": 1
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2022-06-17 00:23:59\", \"model\" : \"Kedsum-TH\", \"id\" : 235, \"channel\" : 1, \"battery_ok\" : 0, \"flags\" : 8, \"temperature_F\" : 59.000, \"humidity\" : 74, \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1655425439,
+    "usUnits": 1,
+    "temperature.235.KedsumTHPacket": 59.0,
+    "humidity.235.KedsumTHPacket": 74.0,
+    "battery.235.KedsumTHPacket": 1,
+    "channel.235.KedsumTHPacket": 1,
+    "flags.235.KedsumTHPacket": 8
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2016-11-04 14:42:49\", \"model\" : \"LaCrosse WS\", \"ws_id\" : 9, \"id\" : 202, \"temperature_C\" : 12.100}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1478270569,
+    "usUnits": 17,
+    "temperature.9:202.LaCrosseWSPacket": 12.1
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2016-11-04 14:44:58\", \"model\" : \"LaCrosse WS\", \"ws_id\" : 9, \"id\" : 202, \"humidity\" : 67}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1478270698,
+    "usUnits": 17,
+    "humidity.9:202.LaCrosseWSPacket": 67.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2016-11-04 14:49:16\", \"model\" : \"LaCrosse WS\", \"ws_id\" : 9, \"id\" : 202, \"wind_speed_ms\" : 0.800, \"wind_direction\" : 270.000}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1478270956,
+    "usUnits": 17,
+    "wind_speed.9:202.LaCrosseWSPacket": 0.8,
+    "wind_dir.9:202.LaCrosseWSPacket": 270.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2023-03-29 20:55:22\", \"model\" : \"LaCrosse-TX141Bv3\", \"id\" : 172, \"channel\" : 1, \"battery_ok\" : 1, \"temperature_C\" : 3.700, \"test\" : \"No\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1680123322,
+    "usUnits": 16,
+    "temperature.172.LaCrosseTX141Bv3Packet": 3.7,
+    "battery.172.LaCrosseTX141Bv3Packet": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-01-16 15:24:43\", \"temperature\" : 54.140, \"humidity\" : 34, \"id\" : 221, \"model\" : \"LaCrosse TX141TH-Bv2 sensor\", \"battery\" : \"OK\", \"test\" : \"Yes\"}"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2020-10-28 00:22:25\", \"model\" : \"LaCrosse-TX141THBv2\", \"id\" : 50, \"channel\" : 0, \"battery_ok\" : 1, \"temperature_C\" : -0.600, \"humidity\" : 60, \"test\" : \"No\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1603844545,
+    "usUnits": 17,
+    "temperature.50.LaCrosseTX141THBv2Packet": -0.6,
+    "humidity.50.LaCrosseTX141THBv2Packet": 60.0,
+    "battery.50.LaCrosseTX141THBv2Packet": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-07-30 21:11:19\", \"model\" : \"LaCrosse TX Sensor\", \"id\" : 127, \"humidity\" : 34.000}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1501449079,
+    "usUnits": 16,
+    "temperature.127.LaCrosseTXPacket": null,
+    "humidity.127.LaCrosseTXPacket": 34.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-07-30 21:11:19\", \"model\" : \"LaCrosse TX Sensor\", \"id\" : 127, \"temperature_C\" : 27.100}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1501449079,
+    "usUnits": 16,
+    "temperature.127.LaCrosseTXPacket": 27.1,
+    "humidity.127.LaCrosseTXPacket": null
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2026-09-03 19:27:42\", \"model\" : \"LaCrosse-TX\", \"id\" : 55, \"temperature_C\" : 28.600, \"mic\" : \"PARITY\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1788463662,
+    "usUnits": 16,
+    "temperature.55.LaCrosseTXPacket": 28.6,
+    "humidity.55.LaCrosseTXPacket": null
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2020-04-21 05:21:19\", \"model\" : \"LaCrosse-WS3600\", \"id\" : 184, \"temperature_C\" : 9.400}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1587446479,
+    "usUnits": 16,
+    "temperature.184.LaCrosseTX18Packet": 9.4,
+    "humidity.184.LaCrosseTX18Packet": null
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2020-04-21 05:21:19\", \"model\" : \"LaCrosse-WS3600\", \"id\" : 184, \"humidity\" : 52}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1587446479,
+    "usUnits": 16,
+    "temperature.184.LaCrosseTX18Packet": null,
+    "humidity.184.LaCrosseTX18Packet": 52.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2020-04-21 05:21:20\", \"model\" : \"LaCrosse-WS3600\", \"id\" : 184, \"rain_mm\" : 0.000}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1587446480,
+    "usUnits": 16,
+    "temperature.184.LaCrosseTX18Packet": null,
+    "humidity.184.LaCrosseTX18Packet": null
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-01-17 20:47:41\", \"model\" : \"Rubicson Temperature Sensor\", \"id\" : 14, \"channel\" : 1, \"battery\" : \"OK\", \"temperature_C\" : -1.800, \"crc\" : \"OK\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1484686061,
+    "usUnits": 16,
+    "temperature.1:14.RubicsonTempPacket": -1.8,
+    "battery.1:14.RubicsonTempPacket": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2023-04-04 19:57:28\", \"protocol\" : 2, \"model\" : \"Rubicson-Temperature\", \"id\" : 183, \"channel\" : 3, \"battery_ok\" : 1, \"temperature_C\" : 21.700, \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1680638248,
+    "usUnits": 16,
+    "temperature.3:183.RubicsonTempPacketV2": 21.7,
+    "battery.3:183.RubicsonTempPacketV2": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2018-08-04 15:29:27\", \"brand\" : \"OS\", \"model\" : \"PCR800\",        \"id\" : 236, \"channel\" : 0, \"battery\" : \"OK\", \"rain_rate\" : 0.000, \"rain_total\" : 109.594}"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2020-08-19 19:31:13\", \"brand\" : \"OS\", \"model\" : \"Oregon-PCR800\", \"id\" : 80, \"channel\" : 0, \"battery_ok\" : 1, \"rain_rate_in_h\" : 0.000, \"rain_in\" : 27.741}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1597865473,
+    "usUnits": 1,
+    "battery.0:80.OSPCR800Packet": 0,
+    "rain_rate.0:80.OSPCR800Packet": 0.0,
+    "rain_total.0:80.OSPCR800Packet": 27.741
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2020-06-06 20:15:17\", \"brand\" : \"OS\", \"model\" : \"Oregon-PCR800\", \"id\" : 32, \"channel\" : 0, \"battery_ok\" : 1, \"rain_rate_in_h\" : 0.150, \"rain_in\" : 0.082}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1591474517,
+    "usUnits": 1,
+    "battery.0:32.OSPCR800Packet": 0,
+    "rain_rate.0:32.OSPCR800Packet": 0.15,
+    "rain_total.0:32.OSPCR800Packet": 0.082
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2021-07-25 15:11:11\", \"model\" : \"Oregon-BTHR918\", \"id\" : 20, \"channel\" : 0, \"battery_ok\" : 1, \"temperature_C\" : 22.200, \"humidity\" : 58, \"pressure_hPa\" : 1009.000}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1627225871,
+    "usUnits": 16,
+    "battery.0:20.OSBTHR918Packet": 0,
+    "temperature.0:20.OSBTHR918Packet": 22.2,
+    "humidity.0:20.OSBTHR918Packet": 58.0,
+    "pressure.0:20.OSBTHR918Packet": 1009.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-01-18 14:56:03\", \"brand\" : \"OS\", \"model\" :\"BHTR968\", \"id\" : 111, \"channel\" : 0, \"battery\" : \"OK\", \"temperature_C\" : 27.200, \"temperature_F\" : 80.960,  \"humidity\" : 46, \"pressure\" : 1013}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1484751363,
+    "usUnits": 16,
+    "battery.0:111.OSBTHR968Packet": 0,
+    "temperature.0:111.OSBTHR968Packet": 27.2,
+    "humidity.0:111.OSBTHR968Packet": 46.0,
+    "pressure.0:111.OSBTHR968Packet": null
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2019-03-06 13:27:23\", \"brand\" : \"OS\", \"model\" : \"BHTR968\", \"id\" : 179, \"channel\" : 0, \"battery\" : \"LOW\", \"temperature_C\" : 19.800, \"humidity\" : 54, \"pressure_hPa\" : 974.000}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1551878843,
+    "usUnits": 16,
+    "battery.0:179.OSBTHR968Packet": 1,
+    "temperature.0:179.OSBTHR968Packet": 19.8,
+    "humidity.0:179.OSBTHR968Packet": 54.0,
+    "pressure.0:179.OSBTHR968Packet": 974.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-01-18 14:56:03\", \"brand\" : \"OS\", \"model\" :\"THGR122N\", \"id\" : 211, \"channel\" : 1, \"battery\" : \"LOW\", \"temperature_C\" : 7.900, \"humidity\" : 27}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1484751363,
+    "usUnits": 16,
+    "battery.1:211.OSTHGR122NPacket": 1,
+    "temperature.1:211.OSTHGR122NPacket": 7.9,
+    "humidity.1:211.OSTHGR122NPacket": 27.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2020-06-06 20:08:12\", \"brand\" : \"OS\", \"model\" : \"Oregon-THGR810\", \"id\" : 153, \"channel\" : 1, \"battery_ok\" : 1, \"temperature_C\" : 18.200, \"humidity\" : 49}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1591474092,
+    "usUnits": 16,
+    "battery.1:153.OSTHGR810Packet": 0,
+    "temperature.1:153.OSTHGR810Packet": 18.2,
+    "humidity.1:153.OSTHGR810Packet": 49.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2019-04-30 20:44:00\", \"brand\" : \"OS\", \"model\" : \"OSv1 Temperature Sensor\", \"sid\" : 5, \"channel\" : 1, \"battery\" : \"OK\", \"temperature_C\" : 18.800}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1556657040,
+    "usUnits": 16,
+    "battery.1:5.OSTHR128Packet": 0,
+    "temperature.1:5.OSTHR128Packet": 18.8
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-01-30 22:19:40\", \"brand\" : \"OS\", \"model\" : \"UV800\", \"id\" : 207, \"channel\" : 1, \"battery\" : \"OK\", \"uv\" : 0}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1485814780,
+    "usUnits": 16,
+    "battery.1:207.OSUV800Packet": 0,
+    "uv_index.1:207.OSUV800Packet": 0.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2022-03-03 15:51:53\", \"model\" : \"Oregon-UV800\", \"id\" : 255, \"channel\" : 1, \"battery_ok\" : 1, \"uv\" : 0}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1646322713,
+    "usUnits": 16,
+    "battery.1:255.OSUV800Packet": 0,
+    "uv_index.1:255.OSUV800Packet": 0.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2019-11-05 07:07:07\", \"model\" : \"Oregon-UVR128\", \"id\" : 116, \"uv\" : 0, \"battery\" : \"OK\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1572937627,
+    "usUnits": 16,
+    "uv_index.0:116.OSUVR128Packet": 0.0,
+    "battery.0:116.OSUVR128Packet": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2019-11-19 06:44:53\", \"model\" : \"Oregon-UVR128\", \"id\" : 116, \"uv\" : 0, \"battery\" : \"OK\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1574145893,
+    "usUnits": 16,
+    "uv_index.0:116.OSUVR128Packet": 0.0,
+    "battery.0:116.OSUVR128Packet": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2020-06-06 21:44:43\", \"brand\" : \"OS\", \"model\" : \"Oregon-WGR800\", \"id\" : 245, \"channel\" : 0, \"battery_ok\" : 1, \"wind_max_m_s\" : 3.100, \"wind_avg_m_s\" : 0.000, \"wind_dir_deg\" : 90.000}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1591479883,
+    "usUnits": 17,
+    "battery.0:245.OSWGR800Packet": 0,
+    "wind_gust.0:245.OSWGR800Packet": 3.1,
+    "wind_speed.0:245.OSWGR800Packet": 0.0,
+    "wind_dir.0:245.OSWGR800Packet": 90.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-08-03 17:41:24\", \"brand\" : \"OS\", \"model\" : \"THN802\", \"id\" : 157, \"channel\" : 3, \"battery\" : \"OK\", \"temperature_C\" : 26.700}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1501782084,
+    "usUnits": 16,
+    "battery.3:157.OSTHN802Packet": 0,
+    "temperature.3:157.OSTHN802Packet": 26.7
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-08-03 17:41:48\", \"brand\" : \"OS\", \"model\" : \"BTHGN129\", \"id\" : 146, \"channel\" : 5, \"battery\" : \"OK\", \"temperature_C\" : 31.700, \"humidity\" : 52, \"pressure_hPa\" : 959.364}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1501782108,
+    "usUnits": 16,
+    "battery.5:146.OSBTHGN129Packet": 0,
+    "temperature.5:146.OSBTHGN129Packet": 31.7,
+    "humidity.5:146.OSBTHGN129Packet": 52.0,
+    "pressure.5:146.OSBTHGN129Packet": 959.364
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2019-02-15 13:43:25\", \"brand\" : \"OS\", \"model\" : \"THGR968\", \"id\" : 187, \"channel\" : 1, \"battery\" : \"OK\", \"temperature_C\" : 16.500, \"humidity\" : 11}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1550238205,
+    "usUnits": 16,
+    "battery.1:187.OSTHGR968Packet": 0,
+    "temperature.1:187.OSTHGR968Packet": 16.5,
+    "humidity.1:187.OSTHGR968Packet": 11.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2019-02-15 14:32:51\", \"brand\" : \"OS\", \"model\" : \"RGR968\", \"id\" : 48, \"channel\" : 0, \"battery\" : \"OK\", \"rain_rate\" : 0.000, \"total_rain\" : 6935.100}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1550241171,
+    "usUnits": 16,
+    "battery.0:48.OSRGR968Packet": 0,
+    "rain_rate.0:48.OSRGR968Packet": 0.0,
+    "rain_total.0:48.OSRGR968Packet": 6935.1
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2017-03-15 20:14:19\", \"model\" : \"Prologue sensor\", \"id\" : 5, \"rid\" : 166, \"channel\" : 1, \"battery\" : \"OK\", \"button\" : 0, \"temperature_C\" : -0.700, \"humidity\" : 49}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1489608859,
+    "usUnits": 16,
+    "temperature.166.ProloguePacket": -0.7,
+    "humidity.166.ProloguePacket": 49.0,
+    "battery.166.ProloguePacket": 0,
+    "channel.166.ProloguePacket": 1
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2019-01-20 11:14:00\", \"model\" : \"Springfield Temperature & Moisture\", \"sid\" : 224, \"channel\" : 3, \"battery\" : \"OK\", \"transmit\" : \"MANUAL\", \"temperature_C\" : -204.800, \"moisture\" : 0, \"mic\" : \"CHECKSUM\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1547982840,
+    "usUnits": 16,
+    "temperature.224.SpringfieldTMPacket": -204.8,
+    "moisture.224.SpringfieldTMPacket": 0.0,
+    "battery.224.SpringfieldTMPacket": 0,
+    "channel.224.SpringfieldTMPacket": 3,
+    "transmit.224.SpringfieldTMPacket": "MANUAL"
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2022-06-19 09:18:57\", \"model\" : \"TFA-Drop\", \"id\" : 549565, \"battery_ok\" : 1, \"rain_mm\" : 0.000, \"mic\" : \"CHECKSUM\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1655630337,
+    "usUnits": 17,
+    "rain_total.549565.TFADropPacket": 0.0,
+    "battery.549565.TFADropPacket": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2024-08-24 13:51:38\", \"model\" : \"TFA-Drop\", \"id\" : 899964, \"battery_ok\" : 1, \"rain_mm\" : 17.780, \"mic\" : \"CHECKSUM\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1724507498,
+    "usUnits": 17,
+    "rain_total.899964.TFADropPacket": 17.78,
+    "battery.899964.TFADropPacket": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2019-09-25 17:15:12\", \"model\" : \"TFA-Twin-Plus-30.3049\", \"id\" : 13, \"channel\" : 1, \"battery\" : \"OK\", \"temperature_C\" : 8.400, \"humidity\" : 91, \"mic\" : \"CHECK  SUM\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1569431712,
+    "usUnits": 16,
+    "channel.13.TFATwinPlus303049Packet": 1,
+    "temperature.13.TFATwinPlus303049Packet": 8.4,
+    "humidity.13.TFATwinPlus303049Packet": 91.0,
+    "battery.13.TFATwinPlus303049Packet": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2019-12-22 22:54:58\", \"model\" : \"TS-FT002\", \"id\" : 127, \"depth_cm\" : 186, \"temperature_C\" : 20.700, \"transmit_s\" : 180, \"flags\" : 8, \"mic\" : \"CHECKSUM\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1577055298,
+    "usUnits": 16,
+    "temperature.127.TSFT002Packet": 20.7,
+    "depth.127.TSFT002Packet": 186.0,
+    "transmit.127.TSFT002Packet": 180.0,
+    "flags.127.TSFT002Packet": 8
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2020-10-19 22:41:24\", \"model\" : \"WS2032\", \"id\" : 11768, \"temperature_C\" : 3.800, \"humidity\" : 48, \"wind_dir_deg\" : 315.000, \"wind_avg_km_h\" : 7.740, \"wind_max_km_h\" : 15.480, \"maybe_flags\" : 0, \"maybe_rain\" : 256, \"mic\" : \"CRC\"}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1603147284,
+    "usUnits": 16,
+    "temperature.11768.WS2032Packet": 3.8,
+    "humidity.11768.WS2032Packet": 48.0,
+    "wind_gust.11768.WS2032Packet": 15.48,
+    "wind_speed.11768.WS2032Packet": 7.74,
+    "wind_dir.11768.WS2032Packet": 315.0,
+    "rain_total.11768.WS2032Packet": 256.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "{\"time\" : \"2019-04-23 12:28:52\", \"model\" : \"WT0124 Pool Thermometer\", \"rid\" : 122, \"channel\" : 1, \"temperature_C\" : 22.800, \"mic\" : \"CHECKSUM\", \"data\" : 172}"
+  ],
+  "packets": [
+   {
+    "dateTime": 1556022532,
+    "usUnits": 16,
+    "temperature.122.WT0124Packet": 22.8
+   }
+  ]
+ },
+ {
+  "lines": [
+   "2016-08-31 16:41:39 Acurite 5n1 sensor 0x0BFA Ch C, Msg 31, Wind 15 kmph / 9.3 mph 270.0^ W (3), rain gauge 0.00 in\n"
+  ],
+  "packets": [
+   {
+    "dateTime": 1472661699,
+    "usUnits": 16,
+    "channel.0BFA.Acurite5n1Packet": "C",
+    "wind_speed.0BFA.Acurite5n1Packet": 15.0,
+    "wind_speed_mph.0BFA.Acurite5n1Packet": 9.3,
+    "wind_dir.0BFA.Acurite5n1Packet": 270.0,
+    "rain_total.0BFA.Acurite5n1Packet": 0.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "2016-08-30 23:57:25 Acurite 5n1 sensor 0x0BFA Ch C, Msg 38, Wind 2 kmph / 1.2 mph, 21.3 C 70.3 F 70 % RH\n"
+  ],
+  "packets": [
+   {
+    "dateTime": 1472601445,
+    "usUnits": 16,
+    "channel.0BFA.Acurite5n1Packet": "C",
+    "wind_speed.0BFA.Acurite5n1Packet": 2.0,
+    "wind_speed_mph.0BFA.Acurite5n1Packet": 1.2,
+    "temperature.0BFA.Acurite5n1Packet": 21.3,
+    "temperature_F.0BFA.Acurite5n1Packet": 70.3,
+    "humidity.0BFA.Acurite5n1Packet": 70.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "2016-09-27 17:09:34 Acurite 5n1 sensor 0x062C Ch A, Total rain fall since last reset: 2.00\n"
+  ],
+  "packets": [
+   {
+    "dateTime": 1474996174,
+    "usUnits": 16,
+    "channel.062C.Acurite5n1Packet": "A",
+    "rain_since_reset.062C.Acurite5n1Packet": 2.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "2016-08-30 23:57:20 Acurite tower sensor 0x37FC Ch A: 26.7 C 80.1 F 16 % RH\n"
+  ],
+  "packets": [
+   {
+    "dateTime": 1472601440,
+    "usUnits": 16,
+    "channel.37FC.AcuriteTowerPacket": "A",
+    "temperature.37FC.AcuriteTowerPacket": 26.7,
+    "temperature_F.37FC.AcuriteTowerPacket": 80.1,
+    "humidity.37FC.AcuriteTowerPacket": 16.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "2017-01-12 02:55:10 : Acurite tower sensor : 12391 : B\n",
+   " Temperature: 18.0 C\n",
+   " Humidity: 68\n",
+   " Battery: 0\n",
+   " : 68\n"
+  ],
+  "packets": [
+   {}
+  ]
+ },
+ {
+  "lines": [
+   "2016-10-31 15:24:29 Acurite 986 sensor 0x2c87 - 2F: 16.7 C 62 F\n"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "2016-10-31 15:23:54 Acurite 986 sensor 0x85ed - 1R: 16.7 C 62 F\n",
+   " {\"time\" : \"2018-04-22 18:01:03\", \"model\" : \"Acurite 986 Sensor\", \"id\" : 43248, \"channel\" : \"1R\", \"temperature_F\" : 69, \"battery\" : \"OK\", \"status\" : 0}\n",
+   " {\"time\" : \"2020-10-19 07:00:32\", \"model\" : \"Acurite-986\", \"id\" : 9534, \"channel\" : \"2F\", \"battery_ok\" : 1, \"temperature_F\" : -10.000, \"status\" : 0, \"mic\" : \"CRC\"}\n"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "2017-03-19 16:48:31 Acurite lightning 0x976F Ch A Msg Type 0x02: 66.2 F 25 % RH Strikes 1 Distance 0 L_status 0x02 - c0 97* 6f  99  50  72  81  c0  62*\n"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "2017-03-19 16:48:47 Acurite lightning 0x976F Ch A Msg Type 0x02: 66.2 F 25 % RH Strikes 1 Distance 0 L_status 0x02 - c0  97* 6f  99  50  72  81  c0  62*\n"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "2016-11-04 04:34:58 Acurite lightning 0x536F Ch A Msg Type 0x51: 15 C 58 % RH Strikes 50 Distance 69 - c0  53  6f  3a  d1  0f  b2  c5  13*\n"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "2016-11-04 04:43:14 Acurite lightning 0x536F Ch A Msg Type 0x51: 15 C 58 % RH Strikes 55 Distance 5 - c0  53  6f  3a  d1  0f  b7  05  58*\n"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "2016-11-04 04:43:22 Acurite lightning 0x536F Ch A Msg Type 0x51: 15 C 58 % RH Strikes 55 Distance 69 - c0  53  6f  3a  d1  0f  b7  c5  18\n"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "2017-01-16 02:37:39 Acurite lightning 0x526F Ch A Msg Type 0x11: 67 C 38 % RH Strikes 47 Distance 81 - dd  52* 6f  a6  11  c3  af  d1  98*\n"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "2017-01-21 18:17:16 : Ambient Weather F007TH Thermo-Hygrometer\n",
+   " House Code: 80\n",
+   " Channel: 1\n",
+   " Temperature: 61.8\n",
+   " Humidity: 13 %\n"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "2016-11-01 01:25:28 :Calibeur RF-104\n",
+   " ID: 1\n",
+   " Temperature: 1.8 C\n",
+   " Humidity: 71 %\n"
+  ],
+  "packets": [
+   {
+    "dateTime": 1477963528,
+    "usUnits": 16,
+    "temperature.1.CalibeurRF104Packet": 1.8,
+    "humidity.1.CalibeurRF104Packet": 71.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "2016-11-04 05:16:39 :Calibeur RF-104\n",
+   " ID: 1\n",
+   " Temperature: -2.2 C\n",
+   " Humidity: 71 %\n"
+  ],
+  "packets": [
+   {
+    "dateTime": 1478236599,
+    "usUnits": 16,
+    "temperature.1.CalibeurRF104Packet": -2.2,
+    "humidity.1.CalibeurRF104Packet": 71.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "2016-09-02 22:26:05 :Fine Offset WH1080 weather station\n",
+   " Msg type: 0\n",
+   " StationID: 0026\n",
+   " Temperature: 19.9 C\n",
+   " Humidity: 78 %\n",
+   " Wind string: E\n",
+   " Wind degrees: 90\n",
+   " Wind avg speed: 0.00\n",
+   " Wind gust: 1.22\n",
+   " Total rainfall: 144.3\n",
+   " Battery: OK\n"
+  ],
+  "packets": [
+   {
+    "dateTime": 1472855165,
+    "usUnits": 16,
+    "temperature.0026.FOWH1080Packet": 19.9,
+    "humidity.0026.FOWH1080Packet": 78.0,
+    "wind_dir.0026.FOWH1080Packet": 90,
+    "wind_speed.0026.FOWH1080Packet": 0.0,
+    "wind_gust.0026.FOWH1080Packet": 1.22,
+    "rain_total.0026.FOWH1080Packet": 144.3,
+    "battery.0026.FOWH1080Packet": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "2017-05-15 11:58:31: Fine Offset Electronics WH1080 / WH3080 Weather Station\n",
+   " Msg type: 0\n",
+   " Station ID: 236\n",
+   " Temperature: 23.9 C\n",
+   " Humidity: 48%\n",
+   " Wind string: NE\n",
+   " Wind degrees: 45\n",
+   " Wind Avg Speed: 1.22\n",
+   " Wind gust: 2.45\n",
+   " Total rainfall: 525.3\n",
+   " Battery: OK\n"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "2017-05-15 12:04:48: Fine Offset Electronics WH1080 / WH3080 Weather Station\n",
+   " Msg type: 1\n",
+   " Station ID: 173\n",
+   " Signal Type: WWVB / MSF\n",
+   " Hours: 21\n",
+   " Minutes: 71\n",
+   " Seconds: 11\n",
+   " Year: 2165\n",
+   " Month: 25\n",
+   " Day: 70\n"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "2017-05-15 11:58:08: Fine Offset Electronics WH3080 Weather Station\n",
+   " Msg type: 2\n",
+   " UV Sensor ID: 225\n",
+   " Sensor Status: OK\n",
+   " UV Index: 8\n",
+   " Lux: 120160.5\n",
+   " Watts / m: 175.93\n",
+   " Foot-candles: 11167.33\n"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "2016-09-02 22:26:05 :   Fine Offset Electronics, WH25\n",
+   " ID:     239\n",
+   " Temperature: 19.9 C\n",
+   " Humidity: 78 %\n",
+   " Pressure: 1007.9 hPa\n"
+  ],
+  "packets": [
+   {
+    "dateTime": 1472855165,
+    "usUnits": 16,
+    "temperature.239.FOWH2Packet": 19.9
+   }
+  ]
+ },
+ {
+  "lines": [
+   "2018-10-09 19:45:12 :   Fine Offset Electronics, WH25\n",
+   " id : 21\n",
+   " temperature_C : 20.900\n",
+   " humidity : 65\n",
+   " pressure_hPa : 980.400\n",
+   " battery : OK\n",
+   " mic : CHECKSUM\n"
+  ],
+  "packets": [
+   {
+    "dateTime": 1539114312,
+    "usUnits": 16
+   }
+  ]
+ },
+ {
+  "lines": [
+   "2016-08-31 17:41:30 :   HIDEKI TS04 sensor\n",
+   " Rolling Code: 9\n",
+   " Channel: 1\n",
+   " Battery: OK\n",
+   " Temperature: 27.30 C\n",
+   " Humidity: 60 %\n"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "2017-01-16 05:39:42 : HIDEKI Wind sensor\n",
+   " Rolling Code: 0\n",
+   " Channel: 4\n",
+   " Battery: OK\n",
+   " Temperature: -5.0 C\n",
+   " Wind Strength: 2.57 km/h\n",
+   " Direction: 45.0 \\xc2\\xb0\n"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "2017-01-16 05:39:42 : HIDEKI Rain sensor\n",
+   " Rolling Code: 0\n",
+   " Channel: 4\n",
+   " Battery: OK\n",
+   " Rain: 2622.900\n"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "2016-09-08 00:43:52 :LaCrosse WS :9 :202\n",
+   " Temperature: 21.0 C\n"
+  ],
+  "packets": [
+   {
+    "dateTime": 1473295432,
+    "usUnits": 17,
+    "temperature.9:202.LaCrosseWSPacket": 21.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "2016-09-08 00:43:53 :LaCrosse WS :9 :202\n",
+   " Humidity: 92\n"
+  ],
+  "packets": [
+   {
+    "dateTime": 1473295433,
+    "usUnits": 17,
+    "humidity.9:202.LaCrosseWSPacket": 92
+   }
+  ]
+ },
+ {
+  "lines": [
+   "2016-09-08 00:43:53 :LaCrosse WS :9 :202\n",
+   " Wind speed: 0.0 m/s\n",
+   " Direction: 67.500\n"
+  ],
+  "packets": [
+   {
+    "dateTime": 1473295433,
+    "usUnits": 17,
+    "wind_speed.9:202.LaCrosseWSPacket": 0.0,
+    "wind_dir.9:202.LaCrosseWSPacket": 67.5
+   }
+  ]
+ },
+ {
+  "lines": [
+   "2016-11-03 17:43:20 :LaCrosse WS :9 :202\n",
+   " Rainfall: 850.04 mm\n"
+  ],
+  "packets": [
+   {
+    "dateTime": 1478195000,
+    "usUnits": 17,
+    "rain_total.9:202.LaCrosseWSPacket": 850.04
+   }
+  ]
+ },
+ {
+  "lines": [
+   "2017-01-15 14:49:03 : Rubicson Temperature Sensor\n",
+   " House Code: 14\n",
+   " Channel: 1\n",
+   " Battery: OK\n",
+   " Temperature: 4.5 C\n",
+   " CRC: OK\n"
+  ],
+  "packets": [
+   {
+    "dateTime": 1484491743,
+    "usUnits": 16,
+    "battery.1:14.RubicsonTempPacket": 0,
+    "temperature.1:14.RubicsonTempPacket": 4.5
+   }
+  ]
+ },
+ {
+  "lines": [
+   "2016-11-03 04:36:23 : OS : PCR800\n",
+   " House Code: 93\n",
+   " Channel: 0\n",
+   " Battery: OK\n",
+   " Rain Rate: 0.0 in/hr\n",
+   " Total Rain: 41.0 in\n"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "2017-09-12 21:44:55     :       OS :    BHTR968\n",
+   " House Code:      111\n",
+   " Channel:         0\n",
+   " Battery:         OK\n",
+   " Celcius:         26.20 C\n",
+   " Fahrenheit:      79.16 F\n",
+   " Humidity:        36 %\n",
+   " Pressure:        1012 mbar\n"
+  ],
+  "packets": [
+   {
+    "dateTime": 1505252695,
+    "usUnits": 16,
+    "battery.0:111.OSBTHR968Packet": 0,
+    "humidity.0:111.OSBTHR968Packet": 36.0,
+    "pressure.0:111.OSBTHR968Packet": 1012.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "2016-09-12 21:44:55     :       OS :    THGR122N\n",
+   " House Code:      96\n",
+   " Channel:         3\n",
+   " Battery:         OK\n",
+   " Temperature:     27.30 C\n",
+   " Humidity:        36 %\n"
+  ],
+  "packets": [
+   {
+    "dateTime": 1473716695,
+    "usUnits": 16,
+    "battery.3:96.OSTHGR122NPacket": 0,
+    "temperature.3:96.OSTHGR122NPacket": 27.3,
+    "humidity.3:96.OSTHGR122NPacket": 36.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "2016-09-01 22:05:47 :Weather Sensor THGR810\n",
+   " House Code: 122\n",
+   " Channel: 1\n",
+   " Battery: OK\n",
+   " Celcius: 26.70 C\n",
+   " Fahrenheit: 80.06 F\n",
+   " Humidity: 58 %\n"
+  ],
+  "packets": [
+   {
+    "dateTime": 1472767547,
+    "usUnits": 16,
+    "battery.1:122.OSTHGR810Packet": 0,
+    "temperature.1:122.OSTHGR810Packet": 26.7,
+    "temperature_F.1:122.OSTHGR810Packet": 80.06,
+    "humidity.1:122.OSTHGR810Packet": 58.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "2016-11-04 02:21:37 :OS :THGR810\n",
+   " House Code: 122\n",
+   " Channel: 1\n",
+   " Battery: OK\n",
+   " Celcius: 22.20 C\n",
+   " Fahrenheit: 71.96 F\n",
+   " Humidity: 57 %\n"
+  ],
+  "packets": [
+   {
+    "dateTime": 1478226097,
+    "usUnits": 16,
+    "battery.1:122.OSTHGR810Packet": 0,
+    "temperature.1:122.OSTHGR810Packet": 22.2,
+    "temperature_F.1:122.OSTHGR810Packet": 71.96,
+    "humidity.1:122.OSTHGR810Packet": 57.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "2016-09-09 11:59:10 :   Thermo Sensor THR228N\n",
+   " House Code:      111\n",
+   " Channel:         2\n",
+   " Battery:         OK\n",
+   " Temperature:     24.70 C\n"
+  ],
+  "packets": []
+ },
+ {
+  "lines": [
+   "2017-01-30 22:00:12 : OS : UV800\n",
+   " House Code: 207\n",
+   " Channel: 1\n",
+   " Battery: OK\n",
+   " UV Index: 0\n"
+  ],
+  "packets": [
+   {
+    "dateTime": 1485813612,
+    "usUnits": 16,
+    "battery.1:207.OSUV800Packet": 0,
+    "uv_index.1:207.OSUV800Packet": 0.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "2019-11-05 07:07:07 : Oregon Scientific UVR128\n",
+   " House Code: 116\n",
+   " UV Index: 0\n",
+   " Battery: OK\n"
+  ],
+  "packets": [
+   {
+    "dateTime": 1572937627,
+    "usUnits": 16,
+    "uv_index.0:116.OSUVR128Packet": 0.0,
+    "battery.0:116.OSUVR128Packet": 0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "2016-11-03 04:36:34 : OS : WGR800\n",
+   " House Code: 85\n",
+   " Channel: 0\n",
+   " Battery: OK\n",
+   " Gust: 1.1 m/s\n",
+   " Average: 1.1 m/s\n",
+   " Direction: 22.5 degrees\n"
+  ],
+  "packets": [
+   {
+    "dateTime": 1478147794,
+    "usUnits": 17,
+    "battery.0:85.OSWGR800Packet": 0,
+    "wind_gust.0:85.OSWGR800Packet": 1.1,
+    "wind_speed.0:85.OSWGR800Packet": 1.1,
+    "wind_dir.0:85.OSWGR800Packet": 22.5
+   }
+  ]
+ },
+ {
+  "lines": [
+   "2017-08-03 17:24:08     :       OS :    THN802\n",
+   " House Code:      157\n",
+   " Channel:         3\n",
+   " Battery:         OK\n",
+   " Celcius:         26.60 C\n"
+  ],
+  "packets": [
+   {
+    "dateTime": 1501781048,
+    "usUnits": 16,
+    "battery.3:157.OSTHN802Packet": 0,
+    "temperature.3:157.OSTHN802Packet": 26.6
+   }
+  ]
+ },
+ {
+  "lines": [
+   "2017-08-03 17:24:03     :       OS :    BTHGN129\n",
+   " House Code:      146\n",
+   " Channel:         5\n",
+   " Battery:         OK\n",
+   " Celcius:         32.00 C\n",
+   " Humidity:        50 %\n",
+   " Pressure:        959.36 mPa\n"
+  ],
+  "packets": [
+   {
+    "dateTime": 1501781043,
+    "usUnits": 16,
+    "battery.5:146.OSBTHGN129Packet": 0,
+    "temperature.5:146.OSBTHGN129Packet": 32.0,
+    "humidity.5:146.OSBTHGN129Packet": 50.0,
+    "pressure.5:146.OSBTHGN129Packet": 959.36
+   }
+  ]
+ },
+ {
+  "lines": [
+   "2018-06-30 01:12:12 :   Nexus Temperature\n",
+   "         House Code:      55\n",
+   "         Battery:         OK\n",
+   "         Channel:         1\n",
+   "         Temperature:     27.10 C\n"
+  ],
+  "packets": [
+   {
+    "dateTime": 1530321132,
+    "usUnits": 16,
+    "battery.1:55.NexusTemperaturePacket": 0,
+    "temperature.1:55.NexusTemperaturePacket": 27.1
+   }
+  ]
+ },
+ {
+  "lines": [
+   "2018-08-01 22:03:11 :   Nexus Temperature/Humidity\n",
+   "    House Code:      180\n",
+   "    Battery:         OK\n",
+   "    Channel:         1\n",
+   "    Temperature:     20.10 C\n",
+   "    Humidity:        42 %\n"
+  ],
+  "packets": [
+   {
+    "dateTime": 1533160991,
+    "usUnits": 16,
+    "battery.1:180.NexusTemperaturePacket": 0,
+    "temperature.1:180.NexusTemperaturePacket": 20.1,
+    "humidity.1:180.NexusTemperaturePacket": 42.0
+   }
+  ]
+ },
+ {
+  "lines": [
+   "2019-09-25 17:15:12 :   TFA-Twin-Plus-30.3049\n",
+   " Channel: 1\n",
+   " Battery: OK\n",
+   " Temperature: 8.40 C\n",
+   " Humidity: 91 %\n"
+  ],
+  "packets": [
+   {
+    "dateTime": 1569431712,
+    "usUnits": 16,
+    "channel.0000.TFATwinPlus303049Packet": 1,
+    "battery.0000.TFATwinPlus303049Packet": 0,
+    "temperature.0000.TFATwinPlus303049Packet": 8.4,
+    "humidity.0000.TFATwinPlus303049Packet": 91.0
+   }
+  ]
+ }
+]

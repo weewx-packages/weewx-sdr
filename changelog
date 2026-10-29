@@ -1,3 +1,11 @@
+Unreleased
+* moved the packet parsers from sdr.py into the package user.sdr_packets, one
+  module per manufacturer.  sdr.py keeps the driver.  A parser added to a local
+  copy of sdr.py has to move into the module of its manufacturer.
+* tests/examples.json checks the packets made from the example output in the
+  parser comments.  Thanks to bjmc, whose matthewwall/weewx-sdr#211 proposed
+  splitting sdr.py and testing the examples.
+
 0.99.2 23oct2026
 * fixed show-detected action on Python 3
 * convert timestamp_match_threshhold to a number and use it to ignore packets

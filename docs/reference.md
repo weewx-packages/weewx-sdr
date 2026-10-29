@@ -268,6 +268,16 @@ non-json output:
 
 unparsed: ['2016-11-04 16:12:39 :\tFine Offset Electronics, WH2 Temperature/Humidity sensor\n', '\tID:\t 38\n', '\tTemperature:\t 54.4 C\n', '\tHumidity:\t 55 %\n']
 
+Each parser is a class in bin/user/sdr_packets, in the module of the sensor's
+manufacturer.  Its IDENTIFIER is the part of the rtl_433 model name that
+selects it, and its parse_json method turns the decoded JSON object into a
+packet.  A new module has to be listed in PARSER_MODULES in
+bin/user/sdr_packets/__init__.py and in the file list of install.py.  Add the
+captured line and the packet it should produce to tests/examples.json, then
+run the tests:
+
+  python -m pytest -q tests
+
 If you are not comfortable writing your own parser, post the output to the
 issues section of the weewx-sdr repository and some helpful person might write
 the parser for you.
