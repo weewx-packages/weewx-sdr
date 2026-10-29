@@ -118,7 +118,7 @@ from user.sdr_packets import PacketFactory
 from user.sdr_packets.base import logdbg, loginf, logerr
 
 DRIVER_NAME = 'SDR'
-DRIVER_VERSION = '0.99.2'
+DRIVER_VERSION = '0.100.0'
 
 # The default command requests json output from every decoder
 # Use the -R option to indicate specific decoders

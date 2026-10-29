@@ -1,4 +1,4 @@
-Unreleased
+0.100.0 29oct2026
 * moved the packet parsers from sdr.py into the package user.sdr_packets, one
   module per manufacturer.  sdr.py keeps the driver.  A parser added to a local
   copy of sdr.py has to move into the module of its manufacturer.
