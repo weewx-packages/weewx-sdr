@@ -3,6 +3,8 @@
 # Distributed under the terms of the GNU Public License (GPLv3)
 # Modified 2026-10-29 by weewx-packages: moved from sdr.py. Earlier
 # modifications are recorded in the header of sdr.py.
+# Modified 2026-10-29 by weewx-packages: stop parse_text from looping on a
+# model whose parser has no text format.
 """Parsers for the packets that rtl_433 emits, one module per manufacturer.
 
 PacketFactory turns rtl_433 output into packets. Each parser is a subclass of
@@ -104,8 +106,15 @@ class PacketFactory(object):
             logdbg("parse_text: ts=%s payload=%s" % (ts, payload))
             for parser in PacketFactory.known_packets():
                 if payload.find(parser.IDENTIFIER) >= 0:
+                    count = len(lines)
                     pkt = parser.parse_text(ts, payload, lines)
                     logdbg("pkt=%s" % pkt)
+                    # A parser without a text format inherits
+                    # Packet.parse_text, which leaves the lines alone. Drop
+                    # the first line, as for an unknown model below, otherwise
+                    # create() hands the same lines to the same parser forever.
+                    if len(lines) == count:
+                        lines.pop(0)
                     return pkt
             logdbg("parse_text: unknown format: ts=%s payload=%s" %
                    (ts, payload))
